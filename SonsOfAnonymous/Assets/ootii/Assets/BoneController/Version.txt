@@ -1,3 +1,0 @@
-﻿Bone Controller
-Version 0.586
-Oct 10, 2020
