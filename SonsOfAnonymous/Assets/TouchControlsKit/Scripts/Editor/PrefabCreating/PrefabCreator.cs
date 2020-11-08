@@ -71,8 +71,8 @@ namespace TouchControlsKit.Inspector
         {
             if( !FindObjectOfType<EventSystem>() )
             {
-              GameObject esGo = new GameObject( "EventSystem", typeof( EventSystem ), typeof( StandaloneInputModule ) );
-              esGo.GetComponent<StandaloneInputModule>().forceModuleActive = true;
+              GameObject esGo = new GameObject( "EventSystem", typeof( EventSystem ), typeof( TouchInputModule ) );
+              esGo.GetComponent<TouchInputModule>().forceModuleActive = true;
             }
         }
 
