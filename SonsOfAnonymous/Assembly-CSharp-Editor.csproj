@@ -65,6 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Dark UI\Editor\InitDarkUI.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Editor\DynamicJoystickEditor.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Editor\FloatingJoystickEditor.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Editor\JoystickEditor.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs" />
     <Compile Include="Assets\TouchControlsKit\Scripts\Editor\CustomInspectors\Base\BaseInspector.cs" />
     <Compile Include="Assets\TouchControlsKit\Scripts\Editor\CustomInspectors\TCKButtonEditor.cs" />
     <Compile Include="Assets\TouchControlsKit\Scripts\Editor\CustomInspectors\TCKDPadArrowEditor.cs" />
