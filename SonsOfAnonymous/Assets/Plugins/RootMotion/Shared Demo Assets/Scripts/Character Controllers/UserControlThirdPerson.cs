@@ -15,6 +15,8 @@ namespace RootMotion.Demos {
 			public bool crouch;
 			public bool jump;
 			public int actionIndex;
+			
+
 		}
 
 		public bool walkByDefault;        // toggle for walking state
