@@ -1,8 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-firstpass.dll:
+    - RootMotion.CameraController
     Assembly-CSharp.dll:
-    - TouchControlsKit.TCKInput
-    - TouchControlsKit.TCKJoystick
+    - DitzeGames.MobileJoystick.Button
+    - DitzeGames.MobileJoystick.TouchField
+    - ThridPersonInput
+    - VariableJoystick
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -24,7 +30,6 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.EventSystems.TouchInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -73,38 +78,40 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11488}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11516}
+      Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11786}
+      Script: {instanceID: 12338}
     - Class: 114
-      Script: {instanceID: 12320}
+      Script: {instanceID: 12370}
     - Class: 114
-      Script: {instanceID: 12366}
+      Script: {instanceID: 12416}
     - Class: 114
-      Script: {instanceID: 12446}
+      Script: {instanceID: 12702}
     - Class: 114
-      Script: {instanceID: 12992}
+      Script: {instanceID: 13294}
     - Class: 114
-      Script: {instanceID: 13232}
+      Script: {instanceID: 13312}
     - Class: 114
-      Script: {instanceID: 13250}
+      Script: {instanceID: 13696}
     - Class: 114
-      Script: {instanceID: 13628}
+      Script: {instanceID: 13910}
     - Class: 114
-      Script: {instanceID: 13860}
+      Script: {instanceID: 13930}
     - Class: 114
-      Script: {instanceID: 14004}
+      Script: {instanceID: 14076}
     - Class: 114
-      Script: {instanceID: 14168}
+      Script: {instanceID: 14144}
+    - Class: 114
+      Script: {instanceID: 14244}
+    - Class: 114
+      Script: {instanceID: 14246}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 134
-      Script: {instanceID: 0}
-    - Class: 135
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -153,6 +160,12 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
+      Hash: 7ab0e790220bdca831fdd886b339039d
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -163,6 +176,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Michsky.UI.Dark
     className: LayoutGroupPositionFix
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -231,6 +250,12 @@ ScriptsOnlyBuild:
     className: CharacterAnimationSimple
   - hash:
       serializedVersion: 2
+      Hash: 562ca269d5a103bbf4e1f2e46a1dcb7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedButton
+  - hash:
+      serializedVersion: 2
       Hash: 1aa8c074f3c00f761ac9dd0688201da3
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion.FinalIK
@@ -259,6 +284,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Michsky.UI.Dark
     className: UIParticleRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: a5565e1bd9c3bd39bdb8f736fbc67fbd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterViewer
   - hash:
       serializedVersion: 2
       Hash: c6945ffdc78ce3f952d79dc51ee6d27d
@@ -295,6 +326,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion.Demos
     className: SoccerDemo
+  - hash:
+      serializedVersion: 2
+      Hash: 83e2f0872fe64ca1df869d241dd03602
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterPanel
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -423,12 +460,6 @@ ScriptsOnlyBuild:
     className: AimController
   - hash:
       serializedVersion: 2
-      Hash: 7ab0e790220bdca831fdd886b339039d
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GridLayoutGroup
-  - hash:
-      serializedVersion: 2
       Hash: 89cfb1007403c8f9da0b63dd0bc7c83f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -475,6 +506,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion.FinalIK
     className: RotationLimitHinge
+  - hash:
+      serializedVersion: 2
+      Hash: 9e27f44bbf48228f203a37254d40f8ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickSetterExample
   - hash:
       serializedVersion: 2
       Hash: a108f0baae1812dba98b26cdb1f46e80
@@ -579,6 +616,12 @@ ScriptsOnlyBuild:
     className: AnimateTiledTexture
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Actions
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -601,6 +644,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion.FinalIK
     className: InteractionObject
+  - hash:
+      serializedVersion: 2
+      Hash: 562ca269d5a103bbf4e1f2e46a1dcb7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DitzeGames.MobileJoystick
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: 65fe382ade994b1f19e12067a57c33c5
@@ -741,6 +790,12 @@ ScriptsOnlyBuild:
     className: MainPanelManager
   - hash:
       serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 9771d64e380149639998132b9d6aa24a
     assemblyName: Assembly-CSharp.dll
     namespaceName: Examples
@@ -787,6 +842,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion.Demos
     className: SimpleLocomotion
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ThridPersonInput
   - hash:
       serializedVersion: 2
       Hash: 4f5574efae39a34180343ae838df5704
@@ -957,6 +1018,12 @@ ScriptsOnlyBuild:
     className: CharacterAnimationThirdPersonIK
   - hash:
       serializedVersion: 2
+      Hash: e4443057e3a3c4b4322211549154413f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DitzeGames.MobileJoystick
+    className: Joystick
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TouchControlsKit
@@ -1039,6 +1106,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: ObjectSpin
+  - hash:
+      serializedVersion: 2
+      Hash: 5a2f5a6eb302bfe906c5eb91ca45bc28
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerController
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -1155,6 +1228,12 @@ ScriptsOnlyBuild:
     className: OffsetEffector
   - hash:
       serializedVersion: 2
+      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DynamicJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 4af2af26054af48a0ae27f849dad4970
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion
@@ -1177,6 +1256,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Examples
     className: TwoDPlayerControl
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedJoystick
   - hash:
       serializedVersion: 2
       Hash: 6ecfe4e5b905b1d4875c777641a22fce
@@ -1321,6 +1406,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 7b8f0976c7b0423bf26ca7d48f4cd0a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickPlayerExample
   - hash:
       serializedVersion: 2
       Hash: 34fd5f9e78d453beca6de579d730c46a
@@ -1503,6 +1594,12 @@ ScriptsOnlyBuild:
     className: MotionAbsorb
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DitzeGames.MobileJoystick.Example
+    className: BoxMover
+  - hash:
+      serializedVersion: 2
       Hash: 1a9a6d3ba06178e93d92ad5ac466cc99
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion.FinalIK
@@ -1611,6 +1708,12 @@ ScriptsOnlyBuild:
     className: RecoilTest
   - hash:
       serializedVersion: 2
+      Hash: 0620cd4699bee3801f11b1a6fbe1a70e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DitzeGames.MobileJoystick
+    className: TouchField
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1633,6 +1736,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion.Demos
     className: KissingRig
+  - hash:
+      serializedVersion: 2
+      Hash: ffc46ef211ad5a2f2b076abf30486868
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedTouchField
   - hash:
       serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
@@ -1687,6 +1796,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion.Demos
     className: InteractionSystemTestGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 9dac16f3efc511835ac976dfae55f580
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VariableJoystick
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
