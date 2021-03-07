@@ -106,6 +106,8 @@
     <Compile Include="Assets\MobileJoystick\Scripts\Example\BoxMover.cs" />
     <Compile Include="Assets\MobileJoystick\Scripts\Joystick.cs" />
     <Compile Include="Assets\MobileJoystick\Scripts\TouchField.cs" />
+    <Compile Include="Assets\Scenes\FixedButton.cs" />
+    <Compile Include="Assets\Scenes\FixedTouchField.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -140,6 +142,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\ThridPersonInput.cs" />
     <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\BaseData\AxesBasedController.cs" />
     <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\BaseData\Axis.cs" />
     <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\BaseData\ControllerBase.cs" />

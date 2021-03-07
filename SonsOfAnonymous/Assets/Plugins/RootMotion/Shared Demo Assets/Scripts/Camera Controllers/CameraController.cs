@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace RootMotion {
 
@@ -16,11 +17,12 @@ namespace RootMotion {
 			LateUpdate,
 			FixedLateUpdate
 		}
-
+		
 		public Transform target; // The target Transform to follow
 		public Transform rotationSpace; // If assigned, will use this Transform's rotation as the rotation space instead of the world space. Useful with spherical planets.
 		public UpdateMode updateMode = UpdateMode.LateUpdate; // When to update the camera?
 		public bool lockCursor = true; // If true, the mouse will be locked to screen center and hidden
+		
 
 		[Header("Position")]
 		public bool smoothFollow; // If > 0, camera will smoothly interpolate towards the target
@@ -62,6 +64,7 @@ namespace RootMotion {
 		private Quaternion r = Quaternion.identity;
 		private Vector3 lastUp;
 		private float blockedDistance = 10f, blockedDistanceV;
+		
 
         public void SetAngles(Quaternion rotation)
         {
