@@ -163,11 +163,16 @@
     <Compile Include="Assets\TouchControlsKit\zExamples\FirstPerson\Scripts\FirstPersonExample.cs" />
     <Compile Include="Assets\TouchControlsKit\zExamples\Tilt-&amp;-Wheel\Scripts\BallMove.cs" />
     <Compile Include="Assets\TouchControlsKit\zExamples\Tilt-&amp;-Wheel\Scripts\CarMove.cs" />
+    <Compile Include="Assets\Yurowm\Demo\Scripts\Actions.cs" />
+    <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterPanel.cs" />
+    <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterViewer.cs" />
+    <Compile Include="Assets\Yurowm\Demo\Scripts\PlayerController.cs" />
     <Compile Include="Assets\_Creepy_Cat\_ShowRoom\_Scripts\AnimateTiledTexture.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Dark UI\Read Me.txt" />
     <None Include="Assets\Dark UI\Shaders\UI Particle Additive.shader" />
+    <None Include="Assets\Yurowm\Shaders\SkinShader.shader" />
     <None Include="Assets\Dark UI\Shaders\UI Blur.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Dark UI\Shaders\Masked UI Blur.shader" />

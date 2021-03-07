@@ -125,8 +125,8 @@ namespace RootMotion {
 
 			// delta rotation
 			if (rotate) {
-				x += Input.GetAxis("Mouse X") * rotationSensitivity;
-				y = ClampAngle(y - Input.GetAxis("Mouse Y") * rotationSensitivity, yMinLimit, yMaxLimit);
+				x += Input.GetAxis("Horizontal") * rotationSensitivity;
+				y = ClampAngle(y - Input.GetAxis("Vertical") * rotationSensitivity, yMinLimit, yMaxLimit);
 			}
 
 			// Distance
