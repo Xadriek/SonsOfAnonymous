@@ -107,8 +107,10 @@
     <Compile Include="Assets\MobileJoystick\Scripts\Joystick.cs" />
     <Compile Include="Assets\MobileJoystick\Scripts\TouchField.cs" />
     <Compile Include="Assets\MyPlayer.cs" />
+    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\Scenes\FixedButton.cs" />
     <Compile Include="Assets\Scenes\FixedTouchField.cs" />
+    <Compile Include="Assets\Scenes\MyPlayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -172,6 +174,7 @@
     <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterViewer.cs" />
     <Compile Include="Assets\Yurowm\Demo\Scripts\PlayerController.cs" />
     <Compile Include="Assets\_Creepy_Cat\_ShowRoom\_Scripts\AnimateTiledTexture.cs" />
+    <Compile Include="Assets\provaScript.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Dark UI\Read Me.txt" />
