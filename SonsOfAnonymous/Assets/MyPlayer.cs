@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MyPlayer : MonoBehaviour
+public class MyPlayer2 : MonoBehaviour
 {
-    public FixedJoystick joystick;
+    public Joystick joystick;
     public Transform trans;
     public CharacterController controller;
     public Animator anim;
