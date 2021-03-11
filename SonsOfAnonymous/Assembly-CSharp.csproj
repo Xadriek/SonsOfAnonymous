@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_4_17;UNITY_2019_4;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CROSS_PLATFORM_INPUT;MOBILE_INPUT;INVECTOR_BASIC;INVECTOR_MELEE;INVECTOR_SHOOTER;OOTII_BC;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_4_17;UNITY_2019_4;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;CROSS_PLATFORM_INPUT;MOBILE_INPUT;INVECTOR_BASIC;INVECTOR_MELEE;INVECTOR_SHOOTER;OOTII_BC;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -64,53 +64,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Dark UI\Scripts\BlurManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\ButtonAnimationFix.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\CanvasManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\CustomDropdown.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\DemoScrollForMore.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\GamepadChecker.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\GamepadTriggerEvent.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\HoldKeyEvent.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\LaunchURL.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\LayoutGroupPositionFix.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\MainPanelButton.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\MainPanelManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\ModalWindowManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\PanelBrushManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\PanelTabButton.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\PanelTabManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\PointerEnterEvents.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\PressKeyEvent.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\QualityManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\ScrollForMore.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\ScrollGamepadManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\SliderGamepadManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\SliderManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\SplashScreenManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\SwitchManager.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\TimedEvent.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\UIDissolveEffect.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\UIElementSound.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\UIParticleRenderer.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\VirtualCursor.cs" />
-    <Compile Include="Assets\Dark UI\Scripts\VirtualCursorAnimate.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\MobileJoystick\Scripts\Button.cs" />
-    <Compile Include="Assets\MobileJoystick\Scripts\Example\BoxMover.cs" />
-    <Compile Include="Assets\MobileJoystick\Scripts\Joystick.cs" />
-    <Compile Include="Assets\MobileJoystick\Scripts\TouchField.cs" />
-    <Compile Include="Assets\MyPlayer.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-    <Compile Include="Assets\Scenes\FixedButton.cs" />
-    <Compile Include="Assets\Scenes\FixedTouchField.cs" />
-    <Compile Include="Assets\Scenes\MyPlayer.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\BlurManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\ButtonAnimationFix.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\CanvasManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\CustomDropdown.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\DemoScrollForMore.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\GamepadChecker.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\GamepadTriggerEvent.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\HoldKeyEvent.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\LaunchURL.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\LayoutGroupPositionFix.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\MainPanelButton.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\MainPanelManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\ModalWindowManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\PanelBrushManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\PanelTabButton.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\PanelTabManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\PointerEnterEvents.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\PressKeyEvent.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\QualityManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\ScrollForMore.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\ScrollGamepadManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\SliderGamepadManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\SliderManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\SplashScreenManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\SwitchManager.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\TimedEvent.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\UIDissolveEffect.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\UIElementSound.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\UIParticleRenderer.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\VirtualCursor.cs" />
+    <Compile Include="Assets\MyAsset\Dark UI\Scripts\VirtualCursorAnimate.cs" />
+    <Compile Include="Assets\MyAsset\_Creepy_Cat\_ShowRoom\_Scripts\AnimateTiledTexture.cs" />
+    <Compile Include="Assets\MyScript\CameraLook.cs" />
+    <Compile Include="Assets\MyScript\Player.cs" />
+    <Compile Include="Assets\MyScript\PlayerController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -145,52 +133,20 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\ThridPersonInput.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\BaseData\AxesBasedController.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\BaseData\Axis.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\BaseData\ControllerBase.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\BaseData\Delegates.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\BaseData\Enums.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\Experimental\TCKTilt.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\TCKButton.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\TCKDPad.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\TCKDPadArrow.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\TCKJoystick.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\TCKSteeringWheel.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Controllers\TCKTouchpad.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\TCKInput.cs" />
-    <Compile Include="Assets\TouchControlsKit\Scripts\Utils\GuiCamera.cs" />
-    <Compile Include="Assets\TouchControlsKit\zExamples\!mainMenu\LevelLoader.cs" />
-    <Compile Include="Assets\TouchControlsKit\zExamples\2DPlatformer\Prefabs\rocketLifetime.cs" />
-    <Compile Include="Assets\TouchControlsKit\zExamples\2DPlatformer\Scripts\TwoDCameraFollow.cs" />
-    <Compile Include="Assets\TouchControlsKit\zExamples\2DPlatformer\Scripts\TwoDGun.cs" />
-    <Compile Include="Assets\TouchControlsKit\zExamples\2DPlatformer\Scripts\TwoDPlayerControl.cs" />
-    <Compile Include="Assets\TouchControlsKit\zExamples\API_Demo.cs" />
-    <Compile Include="Assets\TouchControlsKit\zExamples\FirstPerson\Scripts\FirstPersonExample.cs" />
-    <Compile Include="Assets\TouchControlsKit\zExamples\Tilt-&amp;-Wheel\Scripts\BallMove.cs" />
-    <Compile Include="Assets\TouchControlsKit\zExamples\Tilt-&amp;-Wheel\Scripts\CarMove.cs" />
-    <Compile Include="Assets\Yurowm\Demo\Scripts\Actions.cs" />
-    <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterPanel.cs" />
-    <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterViewer.cs" />
-    <Compile Include="Assets\Yurowm\Demo\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\_Creepy_Cat\_ShowRoom\_Scripts\AnimateTiledTexture.cs" />
-    <Compile Include="Assets\provaScript.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\Dark UI\Read Me.txt" />
-    <None Include="Assets\Dark UI\Shaders\UI Particle Additive.shader" />
-    <None Include="Assets\Yurowm\Shaders\SkinShader.shader" />
-    <None Include="Assets\Dark UI\Shaders\UI Blur.shader" />
+    <None Include="Assets\MyAsset\Dark UI\Read Me.txt" />
+    <None Include="Assets\MyAsset\Dark UI\Shaders\UI Particle Additive.shader" />
+    <None Include="Assets\MyAsset\Dark UI\Shaders\UI Blur.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\Dark UI\Shaders\Masked UI Blur.shader" />
-    <None Include="Assets\TouchControlsKit\zExamples\ReadMeToo.txt" />
+    <None Include="Assets\MyAsset\Dark UI\Shaders\Masked UI Blur.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\Dark UI\Shaders\UI Dissolve Effect.shader" />
+    <None Include="Assets\MyAsset\Dark UI\Shaders\UI Dissolve Effect.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
@@ -201,10 +157,10 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\Dark UI\Shaders\Fast UI Blur.shader" />
+    <None Include="Assets\MyAsset\Dark UI\Shaders\Fast UI Blur.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\_Creepy_Cat\_ShowRoom_Vol 3\Help Readme SOS.txt" />
+    <None Include="Assets\MyAsset\_Creepy_Cat\_ShowRoom_Vol 3\Help Readme SOS.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
@@ -742,11 +698,17 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Notifications">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.Notifications.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -771,6 +733,9 @@
     </Reference>
     <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
