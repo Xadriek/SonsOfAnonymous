@@ -9,7 +9,12 @@ public class PlayerController : MonoBehaviour
     private Transform child;
     private CharacterController controller;
     private Vector3 playerVelocity;
+    [SerializeField]
     private bool groundedPlayer;
+    [SerializeField]
+    private float jumpHeight = 1.0f;
+    [SerializeField]
+    private float gravityValue = -9.81f;
     [SerializeField]
     private float rotationSpeed = 4f;
     [SerializeField]
@@ -58,6 +63,11 @@ public class PlayerController : MonoBehaviour
             Quaternion rotation = Quaternion.Euler(new Vector3(child.localEulerAngles.x , cameraMain.localEulerAngles.y , child.localEulerAngles.z));
             child.rotation = Quaternion.Lerp(child.rotation, rotation, Time.deltaTime * rotationSpeed);
         }
-        
+        // Changes the height position of the player..
+        //if (Input.GetButtonDown("Jump") && groundedPlayer)
+        //{
+        //    playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        //}
+
     }
 }
