@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "520083e7597755e1",
         "name": "com.DefaultCompany.CovidCospiracy",
-        "processId": 17526,
+        "processId": 20854,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -24,6 +24,12 @@
             "deviceId": "520083e7597755e1",
             "name": "com.DefaultCompany.CovidCospiracy",
             "processId": 17526,
+            "exited": false
+        },
+        {
+            "deviceId": "520083e7597755e1",
+            "name": "com.DefaultCompany.CovidCospiracy",
+            "processId": 20854,
             "exited": false
         }
     ],

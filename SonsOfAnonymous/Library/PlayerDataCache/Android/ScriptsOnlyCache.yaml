@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AnimateTiledTexture
     - CameraLook
     - PlayerController
     Cinemachine.dll:
@@ -19,6 +20,8 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.OnScreen.OnScreenStick
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -30,8 +33,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -52,7 +57,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
       Script: {instanceID: 0}
     - Class: 43
       Script: {instanceID: 0}
@@ -60,11 +69,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
@@ -75,47 +92,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11492}
     - Class: 114
-      Script: {instanceID: 11526}
+      Script: {instanceID: 11546}
     - Class: 114
-      Script: {instanceID: 11920}
+      Script: {instanceID: 11942}
     - Class: 114
-      Script: {instanceID: 12360}
+      Script: {instanceID: 12382}
     - Class: 114
-      Script: {instanceID: 12464}
+      Script: {instanceID: 12430}
     - Class: 114
-      Script: {instanceID: 12580}
+      Script: {instanceID: 12486}
     - Class: 114
-      Script: {instanceID: 12636}
+      Script: {instanceID: 12602}
     - Class: 114
-      Script: {instanceID: 12942}
+      Script: {instanceID: 12658}
     - Class: 114
-      Script: {instanceID: 13056}
+      Script: {instanceID: 12964}
     - Class: 114
-      Script: {instanceID: 13222}
+      Script: {instanceID: 13078}
     - Class: 114
-      Script: {instanceID: 13520}
+      Script: {instanceID: 13244}
     - Class: 114
-      Script: {instanceID: 13650}
+      Script: {instanceID: 13542}
     - Class: 114
-      Script: {instanceID: 13818}
+      Script: {instanceID: 13672}
     - Class: 114
       Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 13944}
+      Script: {instanceID: 13862}
     - Class: 114
-      Script: {instanceID: 14188}
+      Script: {instanceID: 13966}
     - Class: 114
-      Script: {instanceID: 14304}
+      Script: {instanceID: 14210}
     - Class: 114
-      Script: {instanceID: 14334}
+      Script: {instanceID: 14326}
     - Class: 114
-      Script: {instanceID: 14340}
+      Script: {instanceID: 14356}
     - Class: 114
-      Script: {instanceID: 14628}
+      Script: {instanceID: 14362}
     - Class: 114
-      Script: {instanceID: 14798}
+      Script: {instanceID: 14652}
     - Class: 114
-      Script: {instanceID: 14950}
+      Script: {instanceID: 14822}
+    - Class: 114
+      Script: {instanceID: 14974}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -391,6 +410,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion
     className: Comments
+  - hash:
+      serializedVersion: 2
+      Hash: 8224519eb58e76212958a5fbce77fd9a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Turn_Move
   - hash:
       serializedVersion: 2
       Hash: 32fce7b97c39bff4b4f6c0f53f7e6bf1
@@ -1635,7 +1660,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 6f99b342209da13b0a2daa1e9d62498f
+      Hash: e792206c1f7cdb2eafa5e256685b627f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1663,6 +1688,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: Benchmark04
+  - hash:
+      serializedVersion: 2
+      Hash: 23df33c63c85dc744f5898583b23fe09
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseLook
   - hash:
       serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
