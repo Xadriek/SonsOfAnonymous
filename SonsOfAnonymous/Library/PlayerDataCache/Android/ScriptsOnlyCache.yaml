@@ -22,6 +22,7 @@ ScriptsOnlyBuild:
     - Michsky.UI.Dark.VirtualCursorAnimate
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
+    - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
@@ -54,7 +55,6 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
-    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
@@ -110,85 +110,85 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11498}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11524}
+      Script: {instanceID: 11530}
     - Class: 114
-      Script: {instanceID: 11536}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 11566}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 11786}
     - Class: 114
-      Script: {instanceID: 11826}
+      Script: {instanceID: 11832}
     - Class: 114
-      Script: {instanceID: 11900}
+      Script: {instanceID: 11906}
     - Class: 114
-      Script: {instanceID: 11942}
+      Script: {instanceID: 11948}
     - Class: 114
-      Script: {instanceID: 12072}
+      Script: {instanceID: 12078}
     - Class: 114
-      Script: {instanceID: 12096}
+      Script: {instanceID: 12102}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 12106}
     - Class: 114
-      Script: {instanceID: 12242}
+      Script: {instanceID: 12248}
     - Class: 114
-      Script: {instanceID: 12270}
+      Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 12362}
+      Script: {instanceID: 12368}
     - Class: 114
-      Script: {instanceID: 12398}
+      Script: {instanceID: 12404}
     - Class: 114
-      Script: {instanceID: 12464}
+      Script: {instanceID: 12470}
     - Class: 114
-      Script: {instanceID: 12580}
+      Script: {instanceID: 12586}
     - Class: 114
-      Script: {instanceID: 12636}
+      Script: {instanceID: 12642}
     - Class: 114
-      Script: {instanceID: 12660}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 12826}
+      Script: {instanceID: 12832}
     - Class: 114
-      Script: {instanceID: 12866}
+      Script: {instanceID: 12872}
     - Class: 114
-      Script: {instanceID: 12976}
+      Script: {instanceID: 12982}
     - Class: 114
-      Script: {instanceID: 13036}
+      Script: {instanceID: 13042}
     - Class: 114
-      Script: {instanceID: 13398}
+      Script: {instanceID: 13404}
     - Class: 114
-      Script: {instanceID: 13572}
+      Script: {instanceID: 13578}
     - Class: 114
-      Script: {instanceID: 13600}
+      Script: {instanceID: 13606}
     - Class: 114
-      Script: {instanceID: 13650}
+      Script: {instanceID: 13656}
     - Class: 114
-      Script: {instanceID: 13818}
+      Script: {instanceID: 13824}
     - Class: 114
-      Script: {instanceID: 13840}
+      Script: {instanceID: 13846}
     - Class: 114
-      Script: {instanceID: 13850}
+      Script: {instanceID: 13856}
     - Class: 114
-      Script: {instanceID: 14124}
+      Script: {instanceID: 14130}
     - Class: 114
-      Script: {instanceID: 14140}
+      Script: {instanceID: 14146}
     - Class: 114
-      Script: {instanceID: 14236}
+      Script: {instanceID: 14194}
     - Class: 114
-      Script: {instanceID: 14334}
+      Script: {instanceID: 14242}
     - Class: 114
-      Script: {instanceID: 14630}
+      Script: {instanceID: 14340}
     - Class: 114
-      Script: {instanceID: 14716}
+      Script: {instanceID: 14636}
     - Class: 114
-      Script: {instanceID: 14752}
+      Script: {instanceID: 14722}
     - Class: 114
-      Script: {instanceID: 14800}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 14924}
+      Script: {instanceID: 14806}
     - Class: 114
-      Script: {instanceID: 15000}
+      Script: {instanceID: 14930}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2221,5 +2221,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main Menu (Mobile).unity
-  playerPath: C:/Users/ensra/OneDrive - Universita degli Studi Roma Tre/Desktop/Desktop/Unity
-    Build & Run/BBRR.apk
+  playerPath: C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/UI.apk
