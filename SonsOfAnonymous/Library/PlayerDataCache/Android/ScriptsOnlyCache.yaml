@@ -1,23 +1,29 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AnimateTiledTexture
-    - CameraLook
-    - PlayerController
-    Cinemachine.dll:
-    - Cinemachine.CinemachineBrain
-    - Cinemachine.CinemachineComposer
-    - Cinemachine.CinemachineFreeLook
-    - Cinemachine.CinemachineOrbitalTransposer
-    - Cinemachine.CinemachinePipeline
-    - Cinemachine.CinemachineVirtualCamera
+    - Michsky.UI.Dark.BlurManager
+    - Michsky.UI.Dark.ButtonAnimationFix
+    - Michsky.UI.Dark.CustomDropdown
+    - Michsky.UI.Dark.LayoutGroupPositionFix
+    - Michsky.UI.Dark.MainPanelManager
+    - Michsky.UI.Dark.ModalWindowManager
+    - Michsky.UI.Dark.PanelBrushManager
+    - Michsky.UI.Dark.PanelTabButton
+    - Michsky.UI.Dark.PanelTabManager
+    - Michsky.UI.Dark.PressKeyEvent
+    - Michsky.UI.Dark.QualityManager
+    - Michsky.UI.Dark.ScrollForMore
+    - Michsky.UI.Dark.SliderManager
+    - Michsky.UI.Dark.SplashScreenManager
+    - Michsky.UI.Dark.SwitchManager
+    - Michsky.UI.Dark.TimedEvent
+    - Michsky.UI.Dark.UIDissolveEffect
+    - Michsky.UI.Dark.UIElementSound
+    - Michsky.UI.Dark.VirtualCursorAnimate
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
-    - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
-    - UnityEngine.InputSystem.OnScreen.OnScreenButton
-    - UnityEngine.InputSystem.OnScreen.OnScreenStick
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.Mobile.AndroidLogcat.Editor.dll:
@@ -27,9 +33,12 @@ ScriptsOnlyBuild:
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TMP_SubMeshUI
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -44,11 +53,24 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
+    - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/ScenaInput.unity:
+    Assets/Scenes/Main Menu (Mobile).unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -57,29 +79,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
+    - Class: 82
       Script: {instanceID: 0}
-    - Class: 90
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -87,67 +99,99 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11490}
     - Class: 114
       Script: {instanceID: 11492}
     - Class: 114
-      Script: {instanceID: 11546}
+      Script: {instanceID: 11494}
+    - Class: 114
+      Script: {instanceID: 11496}
+    - Class: 114
+      Script: {instanceID: 11498}
+    - Class: 114
+      Script: {instanceID: 11506}
+    - Class: 114
+      Script: {instanceID: 11524}
+    - Class: 114
+      Script: {instanceID: 11536}
+    - Class: 114
+      Script: {instanceID: 11566}
+    - Class: 114
+      Script: {instanceID: 11780}
+    - Class: 114
+      Script: {instanceID: 11826}
+    - Class: 114
+      Script: {instanceID: 11900}
     - Class: 114
       Script: {instanceID: 11942}
     - Class: 114
-      Script: {instanceID: 12382}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 12430}
+      Script: {instanceID: 12096}
     - Class: 114
-      Script: {instanceID: 12486}
+      Script: {instanceID: 12100}
     - Class: 114
-      Script: {instanceID: 12602}
+      Script: {instanceID: 12242}
     - Class: 114
-      Script: {instanceID: 12658}
+      Script: {instanceID: 12270}
     - Class: 114
-      Script: {instanceID: 12964}
+      Script: {instanceID: 12362}
     - Class: 114
-      Script: {instanceID: 13078}
+      Script: {instanceID: 12398}
     - Class: 114
-      Script: {instanceID: 13244}
+      Script: {instanceID: 12464}
     - Class: 114
-      Script: {instanceID: 13542}
+      Script: {instanceID: 12580}
     - Class: 114
-      Script: {instanceID: 13672}
+      Script: {instanceID: 12636}
+    - Class: 114
+      Script: {instanceID: 12660}
+    - Class: 114
+      Script: {instanceID: 12826}
+    - Class: 114
+      Script: {instanceID: 12866}
+    - Class: 114
+      Script: {instanceID: 12976}
+    - Class: 114
+      Script: {instanceID: 13036}
+    - Class: 114
+      Script: {instanceID: 13398}
+    - Class: 114
+      Script: {instanceID: 13572}
+    - Class: 114
+      Script: {instanceID: 13600}
+    - Class: 114
+      Script: {instanceID: 13650}
+    - Class: 114
+      Script: {instanceID: 13818}
     - Class: 114
       Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 13862}
+      Script: {instanceID: 13850}
     - Class: 114
-      Script: {instanceID: 13966}
+      Script: {instanceID: 14124}
     - Class: 114
-      Script: {instanceID: 14210}
+      Script: {instanceID: 14140}
     - Class: 114
-      Script: {instanceID: 14326}
+      Script: {instanceID: 14236}
     - Class: 114
-      Script: {instanceID: 14356}
+      Script: {instanceID: 14334}
     - Class: 114
-      Script: {instanceID: 14362}
+      Script: {instanceID: 14630}
     - Class: 114
-      Script: {instanceID: 14652}
+      Script: {instanceID: 14716}
     - Class: 114
-      Script: {instanceID: 14822}
+      Script: {instanceID: 14752}
     - Class: 114
-      Script: {instanceID: 14974}
+      Script: {instanceID: 14800}
+    - Class: 114
+      Script: {instanceID: 14924}
+    - Class: 114
+      Script: {instanceID: 15000}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
-      Script: {instanceID: 0}
-    - Class: 136
-      Script: {instanceID: 0}
-    - Class: 137
-      Script: {instanceID: 0}
-    - Class: 143
-      Script: {instanceID: 0}
-    - Class: 154
-      Script: {instanceID: 0}
-    - Class: 156
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -155,13 +199,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
-    - Class: 218
-      Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -2170,5 +2220,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/ScenaInput.unity
-  playerPath: C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/c.apk
+  - Assets/Scenes/Main Menu (Mobile).unity
+  playerPath: C:/Users/ensra/OneDrive - Universita degli Studi Roma Tre/Desktop/Desktop/Unity
+    Build & Run/BBRR.apk
