@@ -1,52 +1,41 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Michsky.UI.Dark.BlurManager
-    - Michsky.UI.Dark.ButtonAnimationFix
-    - Michsky.UI.Dark.CustomDropdown
-    - Michsky.UI.Dark.LayoutGroupPositionFix
-    - Michsky.UI.Dark.MainPanelManager
-    - Michsky.UI.Dark.ModalWindowManager
-    - Michsky.UI.Dark.PanelBrushManager
-    - Michsky.UI.Dark.PanelTabButton
-    - Michsky.UI.Dark.PanelTabManager
-    - Michsky.UI.Dark.PressKeyEvent
-    - Michsky.UI.Dark.QualityManager
-    - Michsky.UI.Dark.ScrollForMore
-    - Michsky.UI.Dark.SliderManager
-    - Michsky.UI.Dark.SplashScreenManager
-    - Michsky.UI.Dark.SwitchManager
-    - Michsky.UI.Dark.TimedEvent
-    - Michsky.UI.Dark.UIDissolveEffect
-    - Michsky.UI.Dark.UIElementSound
-    - Michsky.UI.Dark.VirtualCursorAnimate
+    - AnimateTiledTexture
+    - CameraLook
+    - PlayerController
+    - animatorStateController2D
+    Cinemachine.dll:
+    - Cinemachine.CinemachineBrain
+    - Cinemachine.CinemachineComposer
+    - Cinemachine.CinemachineFreeLook
+    - Cinemachine.CinemachineInputProvider
+    - Cinemachine.CinemachineOrbitalTransposer
+    - Cinemachine.CinemachinePipeline
+    - Cinemachine.CinemachineVirtualCamera
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.OnScreen.OnScreenButton
+    - UnityEngine.InputSystem.OnScreen.OnScreenStick
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
-    Unity.Mobile.AndroidLogcat.Editor.dll:
-    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
-    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    - TMPro.TMP_SubMeshUI
-    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationBlendTree.Node
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -54,23 +43,11 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.EventTrigger
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
-    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.LayoutElement
-    - UnityEngine.UI.Mask
-    - UnityEngine.UI.RectMask2D
-    - UnityEngine.UI.ScrollRect
-    - UnityEngine.UI.Scrollbar
-    - UnityEngine.UI.Slider
-    - UnityEngine.UI.Text
-    - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Main Menu (Mobile).unity:
+    Assets/Scenes/ScenaInput.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -79,19 +56,29 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 82
+    - Class: 89
       Script: {instanceID: 0}
-    - Class: 83
+    - Class: 90
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -99,99 +86,71 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11490}
+    - Class: 108
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11492}
     - Class: 114
-      Script: {instanceID: 11494}
-    - Class: 114
-      Script: {instanceID: 11496}
-    - Class: 114
-      Script: {instanceID: 11498}
-    - Class: 114
-      Script: {instanceID: 11512}
-    - Class: 114
       Script: {instanceID: 11530}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11884}
     - Class: 114
-      Script: {instanceID: 11572}
-    - Class: 114
-      Script: {instanceID: 11786}
-    - Class: 114
-      Script: {instanceID: 11832}
-    - Class: 114
-      Script: {instanceID: 11906}
-    - Class: 114
-      Script: {instanceID: 11948}
-    - Class: 114
-      Script: {instanceID: 12078}
-    - Class: 114
-      Script: {instanceID: 12102}
-    - Class: 114
-      Script: {instanceID: 12106}
-    - Class: 114
-      Script: {instanceID: 12248}
-    - Class: 114
-      Script: {instanceID: 12276}
+      Script: {instanceID: 11928}
     - Class: 114
       Script: {instanceID: 12368}
     - Class: 114
-      Script: {instanceID: 12404}
+      Script: {instanceID: 12416}
     - Class: 114
-      Script: {instanceID: 12470}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 12586}
+      Script: {instanceID: 12588}
     - Class: 114
-      Script: {instanceID: 12642}
+      Script: {instanceID: 12644}
     - Class: 114
-      Script: {instanceID: 12666}
+      Script: {instanceID: 12950}
     - Class: 114
-      Script: {instanceID: 12832}
+      Script: {instanceID: 13064}
     - Class: 114
-      Script: {instanceID: 12872}
+      Script: {instanceID: 13230}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 13528}
     - Class: 114
-      Script: {instanceID: 13042}
+      Script: {instanceID: 13658}
     - Class: 114
-      Script: {instanceID: 13404}
+      Script: {instanceID: 13826}
     - Class: 114
-      Script: {instanceID: 13578}
+      Script: {instanceID: 13848}
     - Class: 114
-      Script: {instanceID: 13606}
+      Script: {instanceID: 13952}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 14196}
     - Class: 114
-      Script: {instanceID: 13824}
+      Script: {instanceID: 14312}
     - Class: 114
-      Script: {instanceID: 13846}
+      Script: {instanceID: 14342}
     - Class: 114
-      Script: {instanceID: 13856}
+      Script: {instanceID: 14348}
     - Class: 114
-      Script: {instanceID: 14130}
+      Script: {instanceID: 14460}
     - Class: 114
-      Script: {instanceID: 14146}
+      Script: {instanceID: 14638}
     - Class: 114
-      Script: {instanceID: 14194}
+      Script: {instanceID: 14808}
     - Class: 114
-      Script: {instanceID: 14242}
-    - Class: 114
-      Script: {instanceID: 14340}
-    - Class: 114
-      Script: {instanceID: 14636}
-    - Class: 114
-      Script: {instanceID: 14722}
-    - Class: 114
-      Script: {instanceID: 14758}
-    - Class: 114
-      Script: {instanceID: 14806}
-    - Class: 114
-      Script: {instanceID: 14930}
+      Script: {instanceID: 14960}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
+    - Class: 154
+      Script: {instanceID: 0}
+    - Class: 156
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -199,19 +158,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
+    - Class: 218
+      Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -460,6 +413,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: RootMotion
     className: Comments
+  - hash:
+      serializedVersion: 2
+      Hash: 13496e1c7d2342cf4ab7278134e7ce8a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: animatorStateController2D
   - hash:
       serializedVersion: 2
       Hash: 8224519eb58e76212958a5fbce77fd9a
@@ -2220,5 +2179,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Main Menu (Mobile).unity
-  playerPath: C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/UI.apk
+  - Assets/Scenes/ScenaInput.unity
+  playerPath: C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/c.apk
