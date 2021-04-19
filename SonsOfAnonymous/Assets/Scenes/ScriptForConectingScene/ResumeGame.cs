@@ -6,6 +6,6 @@ public class ResumeGame : MonoBehaviour
 {
     public void SceneSwitcher()
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene(1);
     }
 }

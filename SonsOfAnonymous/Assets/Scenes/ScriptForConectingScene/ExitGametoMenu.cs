@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class ExitGametoMenu : MonoBehaviour
 {
+    
+    
     public void SceneSwitcher()
     {
-        Application.LoadLevel(0);
+        SceneManager.LoadScene(0);
     }
 }

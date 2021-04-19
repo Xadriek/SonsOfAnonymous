@@ -6,6 +6,6 @@ public class StopToResume : MonoBehaviour
 {
     public void SceneSwitcher()
     {
-        Application.LoadLevel(2);
+        SceneManager.LoadScene(2);
     }
 }
