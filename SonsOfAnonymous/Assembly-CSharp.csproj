@@ -101,6 +101,7 @@
     <Compile Include="Assets\MyScript\animatorStateController2D.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitGametoMenu.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitSwitch.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\PanelOpener.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ResumeGame.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\SceneSwitch1.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\StopToResume.cs" />
