@@ -99,6 +99,7 @@
     <Compile Include="Assets\MyScript\Player.cs" />
     <Compile Include="Assets\MyScript\PlayerController.cs" />
     <Compile Include="Assets\MyScript\animatorStateController2D.cs" />
+    <Compile Include="Assets\Scenes\PauseMenuPanel.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitGametoMenu.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitSwitch.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\PanelOpener.cs" />
