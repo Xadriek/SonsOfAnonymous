@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ButtonOpener.cs" />
     <Compile Include="Assets\MyAsset\Dark UI\Scripts\BlurManager.cs" />
     <Compile Include="Assets\MyAsset\Dark UI\Scripts\ButtonAnimationFix.cs" />
     <Compile Include="Assets\MyAsset\Dark UI\Scripts\CanvasManager.cs" />
@@ -100,14 +99,16 @@
     <Compile Include="Assets\MyScript\Player.cs" />
     <Compile Include="Assets\MyScript\PlayerController.cs" />
     <Compile Include="Assets\MyScript\animatorStateController2D.cs" />
-    <Compile Include="Assets\SceneSwitchContinue.cs" />
-    <Compile Include="Assets\Scenes\PauseMenuPanel.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\ButtonOpener.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitGametoMenu.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitSwitch.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\PanelOpener.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\PauseMenuPanel.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ResumeGame.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\SceneSwitch1.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\SceneSwitchContinue.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\StopToResume.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\buttonsPanel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -144,7 +145,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\_Barking_Dog\Common Scripts\MouseLook.cs" />
     <Compile Include="Assets\_Barking_Dog\Common Scripts\Turn_Move.cs" />
-    <Compile Include="Assets\buttonsPanel.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\MyAsset\Dark UI\Read Me.txt" />
