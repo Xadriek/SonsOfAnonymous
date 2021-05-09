@@ -783,6 +783,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -816,17 +819,14 @@
     <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
