@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Transform cameraMain;
-    private Player playerInput;
+    public Player playerInput;
     private Transform child;
     private CharacterController controller;
     private Vector3 playerVelocity;
@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector2 movementInput = playerInput.PlayerMain.move.ReadValue<Vector2>();
+        Debug.Log(movementInput);
         Vector3 move = (cameraMain.forward * movementInput.y + cameraMain.right * movementInput.x);
         move.y = 0f;
         controller.Move(move * Time.deltaTime * playerSpeed);
@@ -64,10 +65,18 @@ public class PlayerController : MonoBehaviour
             child.rotation = Quaternion.Lerp(child.rotation, rotation, Time.deltaTime * rotationSpeed);
         }
         // Changes the height position of the player..
-        //if (Input.GetButtonDown("Jump") && groundedPlayer)
-        //{
-        //    playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        //}
+        if (playerInput.PlayerMain.Jump.triggered && groundedPlayer)
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        }
 
+        playerVelocity.y += gravityValue * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
     }
+    public Player getPlayer()
+    {
+        return playerInput;
+    }
+
 }
+

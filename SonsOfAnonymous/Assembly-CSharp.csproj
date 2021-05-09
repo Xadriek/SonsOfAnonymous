@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ButtonOpener.cs" />
     <Compile Include="Assets\MyAsset\Dark UI\Scripts\BlurManager.cs" />
     <Compile Include="Assets\MyAsset\Dark UI\Scripts\ButtonAnimationFix.cs" />
     <Compile Include="Assets\MyAsset\Dark UI\Scripts\CanvasManager.cs" />
@@ -99,6 +100,15 @@
     <Compile Include="Assets\MyScript\CameraLook.cs" />
     <Compile Include="Assets\MyScript\Player.cs" />
     <Compile Include="Assets\MyScript\PlayerController.cs" />
+    <Compile Include="Assets\MyScript\animatorStateController2D.cs" />
+    <Compile Include="Assets\PanelClose.cs" />
+    <Compile Include="Assets\Scenes\PauseMenuPanel.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitGametoMenu.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitSwitch.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\PanelOpener.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\ResumeGame.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\SceneSwitch1.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\StopToResume.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
