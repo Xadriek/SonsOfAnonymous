@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "4100b3f5453d81a5",
         "name": "com.DefaultCompany.CovidCospiracy",
-        "processId": 5671,
+        "processId": 30957,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -66,18 +66,6 @@
             "deviceId": "4100b3f5453d81a5",
             "name": "com.DefaultCompany.CovidCospiracy",
             "processId": 30957,
-            "exited": false
-        },
-        {
-            "deviceId": "4100b3f5453d81a5",
-            "name": "com.DefaultCompany.CovidCospiracy",
-            "processId": 31429,
-            "exited": false
-        },
-        {
-            "deviceId": "4100b3f5453d81a5",
-            "name": "com.DefaultCompany.CovidCospiracy",
-            "processId": 5671,
             "exited": false
         }
     ],

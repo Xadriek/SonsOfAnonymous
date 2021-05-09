@@ -322,7 +322,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143993166}
-  m_LocalRotation: {x: 0.00008239762, y: 0.99908745, z: 0.0019293384, w: -0.042668726}
+  m_LocalRotation: {x: 0.00008239732, y: 0.99908745, z: 0.0019293316, w: -0.042668726}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -984,7 +984,6 @@ GameObject:
   - component: {fileID: 723317389}
   - component: {fileID: 723317388}
   - component: {fileID: 723317387}
-  - component: {fileID: 723317390}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -1054,18 +1053,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 723317388}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 723317390}
-        m_MethodName: LoadMenu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &723317388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,19 +1091,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723317385}
   m_CullTransparentMesh: 0
---- !u!114 &723317390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723317385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab1820cc75dce0a4aa446a9640bd1b10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 1297816738}
 --- !u!1 &770210508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,14 +2358,13 @@ GameObject:
   - component: {fileID: 1349776120}
   - component: {fileID: 1349776119}
   - component: {fileID: 1349776118}
-  - component: {fileID: 1349776121}
   m_Layer: 5
   m_Name: QUITButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1349776117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2453,18 +2427,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1349776119}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1349776121}
-        m_MethodName: QuitGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1349776119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2502,19 +2465,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349776116}
   m_CullTransparentMesh: 0
---- !u!114 &1349776121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349776116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab1820cc75dce0a4aa446a9640bd1b10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 1297816738}
 --- !u!1 &1541631326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,7 +2542,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541631326}
-  m_LocalRotation: {x: 0.0022508819, y: 0.000000005368285, z: -1.20834e-11, w: 0.9999975}
+  m_LocalRotation: {x: 0.0022509114, y: 0.0000000037252872, z: -8.385292e-12, w: 0.9999975}
   m_LocalPosition: {x: 20, y: 1.7, z: 17.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2774,7 +2724,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810728901}
-  m_LocalRotation: {x: -0.0000029462192, y: 0.99999666, z: -0.002250907, w: -0.0013088987}
+  m_LocalRotation: {x: -0.000002946222, y: 0.99999666, z: -0.0022509098, w: -0.0013088983}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2895,10 +2845,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1825258003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab1820cc75dce0a4aa446a9640bd1b10, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ceb4f59148a8fb408698e841d023836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 1297816738}
+  pauseMenuUI: {fileID: 1297816738}
 --- !u!1 &1885128383
 GameObject:
   m_ObjectHideFlags: 0
