@@ -41,6 +41,22 @@ public class @Player : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""05c3daca-cc8f-4c7d-aade-b52de9eab6db"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""4b302b74-d546-46f9-b280-d7c80188e933"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -87,6 +103,74 @@ public class @Player : IInputActionCollection, IDisposable
                     ""action"": ""look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5cb10241-b788-4fea-b5d5-357e3d7040d5"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba670600-a27e-4338-b4c1-d4916b91d903"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Pause/Resume"",
+            ""id"": ""2563cecf-b107-4bec-8f22-43a1bd77336e"",
+            ""actions"": [
+                {
+                    ""name"": ""Resume"",
+                    ""type"": ""Button"",
+                    ""id"": ""39c3721d-f93d-4cf5-8871-dda19e46e0df"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Exit"",
+                    ""type"": ""Button"",
+                    ""id"": ""778c7d72-0a54-41e4-8568-eacea4045142"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""30889f6f-f95e-48f6-ba32-5f11e897b592"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Resume"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2c08bdbd-487d-4383-801b-93b4f4beb772"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Exit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -98,6 +182,12 @@ public class @Player : IInputActionCollection, IDisposable
         m_PlayerMain_move = m_PlayerMain.FindAction("move", throwIfNotFound: true);
         m_PlayerMain_lower = m_PlayerMain.FindAction("lower", throwIfNotFound: true);
         m_PlayerMain_look = m_PlayerMain.FindAction("look", throwIfNotFound: true);
+        m_PlayerMain_Jump = m_PlayerMain.FindAction("Jump", throwIfNotFound: true);
+        m_PlayerMain_Pause = m_PlayerMain.FindAction("Pause", throwIfNotFound: true);
+        // Pause/Resume
+        m_PauseResume = asset.FindActionMap("Pause/Resume", throwIfNotFound: true);
+        m_PauseResume_Resume = m_PauseResume.FindAction("Resume", throwIfNotFound: true);
+        m_PauseResume_Exit = m_PauseResume.FindAction("Exit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -150,6 +240,8 @@ public class @Player : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerMain_move;
     private readonly InputAction m_PlayerMain_lower;
     private readonly InputAction m_PlayerMain_look;
+    private readonly InputAction m_PlayerMain_Jump;
+    private readonly InputAction m_PlayerMain_Pause;
     public struct PlayerMainActions
     {
         private @Player m_Wrapper;
@@ -157,6 +249,8 @@ public class @Player : IInputActionCollection, IDisposable
         public InputAction @move => m_Wrapper.m_PlayerMain_move;
         public InputAction @lower => m_Wrapper.m_PlayerMain_lower;
         public InputAction @look => m_Wrapper.m_PlayerMain_look;
+        public InputAction @Jump => m_Wrapper.m_PlayerMain_Jump;
+        public InputAction @Pause => m_Wrapper.m_PlayerMain_Pause;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMain; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -175,6 +269,12 @@ public class @Player : IInputActionCollection, IDisposable
                 @look.started -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnLook;
                 @look.performed -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnLook;
                 @look.canceled -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnLook;
+                @Jump.started -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnJump;
+                @Pause.started -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_PlayerMainActionsCallbackInterface = instance;
             if (instance != null)
@@ -188,14 +288,68 @@ public class @Player : IInputActionCollection, IDisposable
                 @look.started += instance.OnLook;
                 @look.performed += instance.OnLook;
                 @look.canceled += instance.OnLook;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
     public PlayerMainActions @PlayerMain => new PlayerMainActions(this);
+
+    // Pause/Resume
+    private readonly InputActionMap m_PauseResume;
+    private IPauseResumeActions m_PauseResumeActionsCallbackInterface;
+    private readonly InputAction m_PauseResume_Resume;
+    private readonly InputAction m_PauseResume_Exit;
+    public struct PauseResumeActions
+    {
+        private @Player m_Wrapper;
+        public PauseResumeActions(@Player wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Resume => m_Wrapper.m_PauseResume_Resume;
+        public InputAction @Exit => m_Wrapper.m_PauseResume_Exit;
+        public InputActionMap Get() { return m_Wrapper.m_PauseResume; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PauseResumeActions set) { return set.Get(); }
+        public void SetCallbacks(IPauseResumeActions instance)
+        {
+            if (m_Wrapper.m_PauseResumeActionsCallbackInterface != null)
+            {
+                @Resume.started -= m_Wrapper.m_PauseResumeActionsCallbackInterface.OnResume;
+                @Resume.performed -= m_Wrapper.m_PauseResumeActionsCallbackInterface.OnResume;
+                @Resume.canceled -= m_Wrapper.m_PauseResumeActionsCallbackInterface.OnResume;
+                @Exit.started -= m_Wrapper.m_PauseResumeActionsCallbackInterface.OnExit;
+                @Exit.performed -= m_Wrapper.m_PauseResumeActionsCallbackInterface.OnExit;
+                @Exit.canceled -= m_Wrapper.m_PauseResumeActionsCallbackInterface.OnExit;
+            }
+            m_Wrapper.m_PauseResumeActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Resume.started += instance.OnResume;
+                @Resume.performed += instance.OnResume;
+                @Resume.canceled += instance.OnResume;
+                @Exit.started += instance.OnExit;
+                @Exit.performed += instance.OnExit;
+                @Exit.canceled += instance.OnExit;
+            }
+        }
+    }
+    public PauseResumeActions @PauseResume => new PauseResumeActions(this);
     public interface IPlayerMainActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnLower(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
+    }
+    public interface IPauseResumeActions
+    {
+        void OnResume(InputAction.CallbackContext context);
+        void OnExit(InputAction.CallbackContext context);
     }
 }
