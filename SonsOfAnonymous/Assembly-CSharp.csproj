@@ -99,6 +99,17 @@
     <Compile Include="Assets\MyScript\CameraLook.cs" />
     <Compile Include="Assets\MyScript\Player.cs" />
     <Compile Include="Assets\MyScript\PlayerController.cs" />
+    <Compile Include="Assets\MyScript\animatorStateController2D.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\ButtonOpener.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitGametoMenu.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitSwitch.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\PanelOpener.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\PauseMenuPanel.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\ResumeGame.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\SceneSwitch1.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\SceneSwitchContinue.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\StopToResume.cs" />
+    <Compile Include="Assets\Scenes\ScriptForConectingScene\buttonsPanel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -133,6 +144,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\_Barking_Dog\Common Scripts\MouseLook.cs" />
+    <Compile Include="Assets\_Barking_Dog\Common Scripts\Turn_Move.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\MyAsset\Dark UI\Read Me.txt" />
@@ -698,6 +711,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -731,17 +747,14 @@
     <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/Xadri/Documents/GitHub/SonsOfAnonymous/SonsOfAnonymous/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
