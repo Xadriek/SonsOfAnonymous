@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "520083e7597755e1",
+    "m_SelectedDeviceId": "4100b3f5453d81a5",
     "m_SelectedPackage": {
-        "deviceId": "520083e7597755e1",
+        "deviceId": "4100b3f5453d81a5",
         "name": "com.DefaultCompany.CovidCospiracy",
-        "processId": 13053,
+        "processId": 3163,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -18,6 +18,30 @@
             "deviceId": "520083e7597755e1",
             "name": "com.DefaultCompany.CovidCospiracy",
             "processId": 13053,
+            "exited": false
+        },
+        {
+            "deviceId": "4100b3f5453d81a5",
+            "name": "com.DefaultCompany.CovidCospiracy",
+            "processId": 25373,
+            "exited": false
+        },
+        {
+            "deviceId": "4100b3f5453d81a5",
+            "name": "com.DefaultCompany.CovidCospiracy",
+            "processId": 724,
+            "exited": false
+        },
+        {
+            "deviceId": "4100b3f5453d81a5",
+            "name": "com.DefaultCompany.CovidCospiracy",
+            "processId": 2124,
+            "exited": false
+        },
+        {
+            "deviceId": "4100b3f5453d81a5",
+            "name": "com.DefaultCompany.CovidCospiracy",
+            "processId": 3163,
             "exited": false
         }
     ],

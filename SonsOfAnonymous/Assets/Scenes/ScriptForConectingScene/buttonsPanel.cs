@@ -29,7 +29,7 @@ public class buttonsPanel: MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
 
 
     }
