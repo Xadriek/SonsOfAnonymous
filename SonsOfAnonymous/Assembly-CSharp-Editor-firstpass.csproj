@@ -727,13 +727,13 @@
       <Project>{A8E30677-F748-108C-1765-ADEC99199DB0}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
-    <ProjectReference Include="PlayFabEditorExtensions.csproj">
-      <Project>{BE726924-A356-E03F-2773-6EBD05DFA8D9}</Project>
-      <Name>PlayFabEditorExtensions</Name>
-    </ProjectReference>
     <ProjectReference Include="PlayFab.csproj">
       <Project>{F854B5C9-5FBE-C12C-71BF-1F2C54C7476D}</Project>
       <Name>PlayFab</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFabEditorExtensions.csproj">
+      <Project>{BE726924-A356-E03F-2773-6EBD05DFA8D9}</Project>
+      <Name>PlayFabEditorExtensions</Name>
     </ProjectReference>
     <ProjectReference Include="PlayFabSDKEditor.csproj">
       <Project>{95D2E945-8E94-AD4E-F89E-AD9A63DDAE85}</Project>
