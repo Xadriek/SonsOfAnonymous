@@ -101,7 +101,7 @@
      <Compile Include="Assets\Scenes\ScriptForConectingScene\SceneSwitchContinue.cs" />
      <Compile Include="Assets\Scenes\ScriptForConectingScene\StopToResume.cs" />
      <Compile Include="Assets\Scenes\ScriptForConectingScene\buttonsPanel.cs" />
-     <Compile Include="Assets\Scenes\ScriptForPlayFab\PlayFabLogin.cs" />
+     <Compile Include="Assets\Scenes\ScriptForPlayFab\PlayFabController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
