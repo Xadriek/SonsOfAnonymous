@@ -65,10 +65,10 @@ public class PlayerController : MonoBehaviour
             child.rotation = Quaternion.Lerp(child.rotation, rotation, Time.deltaTime * rotationSpeed);
         }
         // Changes the height position of the player..
-        if (playerInput.PlayerMain.Jump.triggered && groundedPlayer)
+       /* if (playerInput.PlayerMain.Jump.triggered && groundedPlayer)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        }
+        }*/
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);

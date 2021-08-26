@@ -55,8 +55,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\BasicInkExample.cs" />
-     <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\QuitGameOnKeypress.cs" />
      <Compile Include="Assets\MyAsset\Dark UI\Scripts\BlurManager.cs" />
      <Compile Include="Assets\MyAsset\Dark UI\Scripts\ButtonAnimationFix.cs" />
      <Compile Include="Assets\MyAsset\Dark UI\Scripts\CanvasManager.cs" />
@@ -767,17 +765,9 @@
       <Project>{BE726924-A356-E03F-2773-6EBD05DFA8D9}</Project>
       <Name>PlayFabEditorExtensions</Name>
     </ProjectReference>
-    <ProjectReference Include="Ink-Libraries.csproj">
-      <Project>{79B67FAC-7B8A-3ECD-F576-3FC01207ACE8}</Project>
-      <Name>Ink-Libraries</Name>
-    </ProjectReference>
     <ProjectReference Include="PlayFabSDKEditor.csproj">
       <Project>{95D2E945-8E94-AD4E-F89E-AD9A63DDAE85}</Project>
       <Name>PlayFabSDKEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="InkEditor.csproj">
-      <Project>{04862B7F-73C5-1188-ABF0-903A45614329}</Project>
-      <Name>InkEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

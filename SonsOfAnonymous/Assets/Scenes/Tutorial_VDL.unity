@@ -3042,7 +3042,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560981872}
-  m_LocalRotation: {x: 0.023527177, y: -0.50002664, z: 0.013591077, w: 0.8655837}
+  m_LocalRotation: {x: 0.023540707, y: -0.4991647, z: 0.013567651, w: 0.86608106}
   m_LocalPosition: {x: 60.13874, y: 2.3425317, z: 87.081406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -3241,7 +3241,6 @@ MonoBehaviour:
   dialogueBoxGUI: {fileID: 2003598988}
   letterDelay: 0.1
   letterMultiplier: 0.5
-  DialogueInput: 102
   Names: 
   dialogueLines: []
   letterIsMultiplied: 0
@@ -3808,7 +3807,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911388579}
-  m_LocalRotation: {x: 0.0037151745, y: -0.50187933, z: 0.0021557533, w: 0.864927}
+  m_LocalRotation: {x: 0.00371823, y: -0.50064874, z: 0.0021504634, w: 0.86563987}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4354,7 +4353,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146025355}
-  m_LocalRotation: {x: 0.06985908, y: -0.49469176, z: 0.039936796, w: 0.8653351}
+  m_LocalRotation: {x: 0.06985909, y: -0.49469176, z: 0.0399368, w: 0.8653351}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
