@@ -135,19 +135,27 @@ public class DialogueSystem : MonoBehaviour
 
                 if (currentCharacterIndex < stringLength)
                 {
-                    if (playerController.playerInput.PlayerMain.Interaction.triggered)
+                    if (currentCharacterIndex % 20 != 0)
                     {
-                        yield return new WaitForSeconds(letterDelay * letterMultiplier);
+                        if (playerController.playerInput.PlayerMain.Interaction.triggered)
+                        {
+                            yield return new WaitForSeconds(letterDelay * letterMultiplier);
 
-                        if (audioClip) audioSource.PlayOneShot(audioClip, 0.5F);
+                            if (audioClip) audioSource.PlayOneShot(audioClip, 0.5F);
+                        }
+                        else
+                        {
+                            yield return new WaitForSeconds(letterDelay);
+
+
+                            if (audioClip) audioSource.PlayOneShot(audioClip, 0.5F);
+                        }
                     }
                     else
                     {
-                        yield return new WaitForSeconds(letterDelay);
-
-                        if (audioClip) audioSource.PlayOneShot(audioClip, 0.5F);
+                        dialogueText.text += "\n";
                     }
-                }
+                } 
                 else
                 {
                     dialogueEnded = false;

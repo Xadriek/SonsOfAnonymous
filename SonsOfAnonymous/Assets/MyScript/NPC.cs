@@ -9,6 +9,7 @@ public class NPC : MonoBehaviour
 
     public Transform ChatBackGround;
     public Transform NPCCharacter;
+    public Transform Player;
 
     private PlayerController playerController;
 
@@ -27,8 +28,11 @@ public class NPC : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 Pos = Camera.main.WorldToScreenPoint(NPCCharacter.position);
-        Pos.y += 50;
+        //Vector3 Pos = Camera.main.WorldToScreenPoint(NPCCharacter.position);
+        Vector3 Pos = Camera.main.WorldToScreenPoint(Player.position);
+
+        Pos.y += 180;
+        Pos.z += 50;
         ChatBackGround.position = Pos;
     }
 
