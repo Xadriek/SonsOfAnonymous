@@ -89,6 +89,7 @@
      <Compile Include="Assets\MyAsset\_Creepy_Cat\_ShowRoom\_Scripts\AnimateTiledTexture.cs" />
      <Compile Include="Assets\MyScript\CameraLook.cs" />
      <Compile Include="Assets\MyScript\DialogueSystem.cs" />
+     <Compile Include="Assets\MyScript\EventScript.cs" />
      <Compile Include="Assets\MyScript\NPC.cs" />
      <Compile Include="Assets\MyScript\Player.cs" />
      <Compile Include="Assets\MyScript\PlayerController.cs" />

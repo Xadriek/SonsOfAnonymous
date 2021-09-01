@@ -28,7 +28,6 @@ public class NPC : MonoBehaviour
 
     void FixedUpdate()
     {
-        //Vector3 Pos = Camera.main.WorldToScreenPoint(NPCCharacter.position);
         Vector3 Pos = Camera.main.WorldToScreenPoint(Player.position);
 
         Pos.y += 180;
@@ -40,6 +39,7 @@ public class NPC : MonoBehaviour
     {
         this.gameObject.GetComponent<NPC>().enabled = true;
         FindObjectOfType<DialogueSystem>().EnterRangeOfNPC();
+        
         if ((playerController.playerInput.PlayerMain.Interaction.triggered))
         {
             this.gameObject.GetComponent<NPC>().enabled = true;

@@ -12,7 +12,7 @@ public class DialogueSystem : MonoBehaviour
     public GameObject dialogueGUI;
     public Transform dialogueBoxGUI;
 
-    public float letterDelay = 0.1f;
+    public float letterDelay = 0.3f;
     public float letterMultiplier = 0.5f;
 
     //public KeyCode DialogueInput = playerController.playerInput.PlayerMain.Interaction.triggered;
@@ -66,6 +66,22 @@ public class DialogueSystem : MonoBehaviour
             dialogueBoxGUI.gameObject.SetActive(false);
         }
     }
+
+    public void EventScriptName()
+    {
+        outOfRange = false;
+        dialogueBoxGUI.gameObject.SetActive(true);
+        nameText.text = Names;
+       
+            if (!dialogueActive)
+            {
+                dialogueActive = true;
+                StartCoroutine(StartDialogue());
+            }
+        
+        StartDialogue();
+    }
+
 
     public void NPCName()
     {
@@ -137,7 +153,7 @@ public class DialogueSystem : MonoBehaviour
                 {
                     if (currentCharacterIndex % 20 != 0)
                     {
-                        if (playerController.playerInput.PlayerMain.Interaction.triggered)
+                        if ((playerController.playerInput.PlayerMain.Interaction.triggered))
                         {
                             yield return new WaitForSeconds(letterDelay * letterMultiplier);
 
@@ -164,7 +180,7 @@ public class DialogueSystem : MonoBehaviour
             }
             while (true)
             {
-                if (playerController.playerInput.PlayerMain.Interaction.triggered)
+                if ((playerController.playerInput.PlayerMain.Interaction.triggered))
                 {
                     break;
                 }
