@@ -67,5 +67,11 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Schema controllo",
+            "bindingGroup": "Schema controllo",
+            "devices": []
+        }
+    ]
 }

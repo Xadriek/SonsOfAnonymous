@@ -80,7 +80,13 @@ public class @Player : IInputActionCollection, IDisposable
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""Schema controllo"",
+            ""bindingGroup"": ""Schema controllo"",
+            ""devices"": []
+        }
+    ]
 }");
         // PlayerMain
         m_PlayerMain = asset.FindActionMap("PlayerMain", throwIfNotFound: true);
@@ -181,6 +187,15 @@ public class @Player : IInputActionCollection, IDisposable
         }
     }
     public PlayerMainActions @PlayerMain => new PlayerMainActions(this);
+    private int m_SchemacontrolloSchemeIndex = -1;
+    public InputControlScheme SchemacontrolloScheme
+    {
+        get
+        {
+            if (m_SchemacontrolloSchemeIndex == -1) m_SchemacontrolloSchemeIndex = asset.FindControlSchemeIndex("Schema controllo");
+            return asset.controlSchemes[m_SchemacontrolloSchemeIndex];
+        }
+    }
     public interface IPlayerMainActions
     {
         void OnMove(InputAction.CallbackContext context);
