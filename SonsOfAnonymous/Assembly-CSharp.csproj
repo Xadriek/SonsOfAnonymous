@@ -102,6 +102,7 @@
      <Compile Include="Assets\Scenes\ScriptForConectingScene\ResumeGame.cs" />
      <Compile Include="Assets\Scenes\ScriptForConectingScene\SceneSwitch1.cs" />
      <Compile Include="Assets\Scenes\ScriptForConectingScene\SceneSwitchContinue.cs" />
+     <Compile Include="Assets\Scenes\ScriptForConectingScene\SettingsButton.cs" />
      <Compile Include="Assets\Scenes\ScriptForConectingScene\StopToResume.cs" />
      <Compile Include="Assets\Scenes\ScriptForConectingScene\buttonsPanel.cs" />
      <Compile Include="Assets\Scenes\ScriptForPlayFab\PlayFabController.cs" />
