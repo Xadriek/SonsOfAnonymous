@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CountdownTimer : MonoBehaviour
 {
+    public static bool GameIsPaused = false;
 
     private float timer = 10f;
 
@@ -15,19 +16,20 @@ public class CountdownTimer : MonoBehaviour
     void Start()
     {
         timerSeconds = GetComponent<Text>();
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         timer -= Time.deltaTime;
         timerSeconds.text = timer.ToString("f0");
         if (timer <= 0)
         {
             SceneManager.LoadScene(3);
-                ;
+            ;
         }
-
     }
+
 }

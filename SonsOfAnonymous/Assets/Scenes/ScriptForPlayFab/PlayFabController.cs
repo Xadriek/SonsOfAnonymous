@@ -8,7 +8,7 @@ public class PlayFabController : MonoBehaviour
 {
    
    public static PlayFabController PFC;
-   
+    public GameObject Panel;
     private string userEmail;
     private string userPassword;
     private string username;
@@ -69,12 +69,12 @@ public class PlayFabController : MonoBehaviour
         PlayerPrefs.SetString("PASSWORD", userPassword);
         loginPanel.SetActive(false);
         recoverButton.SetActive(false);
-        GetStats();
+       // GetStats();
     }
     private void OnLoginAndroidSuccess(LoginResult result)
     {
         Debug.Log("Congratulations, you made your first successful API call!");
-        GetStats();
+        //GetStats();
         loginPanel.SetActive(false);
     }
 
@@ -83,7 +83,7 @@ public class PlayFabController : MonoBehaviour
         Debug.Log("Congratulations, you made your first successful API call!");
         PlayerPrefs.SetString("EMAIL", userEmail);
         PlayerPrefs.SetString("PASSWORD", userPassword);
-        GetStats();
+       // GetStats();
         loginPanel.SetActive(false);
     }
     private void OnLoginFailure(PlayFabError error)
@@ -140,77 +140,89 @@ public class PlayFabController : MonoBehaviour
         PlayerPrefs.SetString("EMAIL", userEmail);
         PlayerPrefs.SetString("PASSWORD", userPassword);
         addLoginPanel.SetActive(false);
-        GetStats();
+       // GetStats();
+    }
+
+
+
+    
+   
+    public void ClosePanel()
+    {
+        if (Panel != null)
+        {
+            Panel.SetActive(false);
+        }
     }
     #endregion Login
 
-    public int playerLevel;
-    public int gameLevel;
-    public int playerHealth;
-    public int playerDamage;
-    public int playerHighScore;
+    /* public int playerLevel;
+     public int gameLevel;
+     public int playerHealth;
+     public int playerDamage;
+     public int playerHighScore;*/
 
 
 
-    #region PlayerStats
-    public void SetStats()
-    {
-        PlayFabClientAPI.UpdatePlayerStatistics(new UpdatePlayerStatisticsRequest
-        {
-            // request.Statistics is a list, so multiple StatisticUpdate objects can be defined if required.
-            Statistics = new List<StatisticUpdate> {
-                new StatisticUpdate { StatisticName = "PlayerLevel", Value = playerLevel },
-                new StatisticUpdate { StatisticName = "GameLevel", Value = gameLevel },
-                new StatisticUpdate { StatisticName = "PlayerHealth", Value = playerHealth },
-                new StatisticUpdate { StatisticName = "PlayerDamage", Value = playerDamage},
-                new StatisticUpdate { StatisticName = "PlayerHighScore", Value = playerHighScore },
-                
-    }
-        },
-    result => { Debug.Log("User statistics updated"); },
-    error => { Debug.LogError(error.GenerateErrorReport()); });
-    }
+    /* #region PlayerStats
+     public void SetStats()
+     {
+         PlayFabClientAPI.UpdatePlayerStatistics(new UpdatePlayerStatisticsRequest
+         {
+             // request.Statistics is a list, so multiple StatisticUpdate objects can be defined if required.
+             Statistics = new List<StatisticUpdate> {
+                 new StatisticUpdate { StatisticName = "PlayerLevel", Value = playerLevel },
+                 new StatisticUpdate { StatisticName = "GameLevel", Value = gameLevel },
+                 new StatisticUpdate { StatisticName = "PlayerHealth", Value = playerHealth },
+                 new StatisticUpdate { StatisticName = "PlayerDamage", Value = playerDamage},
+                 new StatisticUpdate { StatisticName = "PlayerHighScore", Value = playerHighScore },
 
-    void GetStats()
-    {
-        PlayFabClientAPI.GetPlayerStatistics(
-            new GetPlayerStatisticsRequest(),
-            OnGetStats,
-            error => Debug.LogError(error.GenerateErrorReport())
-        );
-    }
+     }
+         },
+     result => { Debug.Log("User statistics updated"); },
+     error => { Debug.LogError(error.GenerateErrorReport()); });
+     }
 
-    void OnGetStats(GetPlayerStatisticsResult result)
-    {
-        Debug.Log("Received the following Statistics:");
-        foreach (var eachStat in result.Statistics)
-        {
-            Debug.Log("Statistic (" + eachStat.StatisticName + "): " + eachStat.Value);
-            switch (eachStat.StatisticName)
-            {
-                case "PlayerLevel":
-                    playerLevel = eachStat.Value;
-                    break;
+     void GetStats()
+     {
+         PlayFabClientAPI.GetPlayerStatistics(
+             new GetPlayerStatisticsRequest(),
+             OnGetStats,
+             error => Debug.LogError(error.GenerateErrorReport())
+         );
+     }
 
-                case "GameLevel":
-                    gameLevel = eachStat.Value;
-                    break;
+     void OnGetStats(GetPlayerStatisticsResult result)
+     {
+         Debug.Log("Received the following Statistics:");
+         foreach (var eachStat in result.Statistics)
+         {
+             Debug.Log("Statistic (" + eachStat.StatisticName + "): " + eachStat.Value);
+             switch (eachStat.StatisticName)
+             {
+                 case "PlayerLevel":
+                     playerLevel = eachStat.Value;
+                     break;
 
-                case "PlayerHealth":
-                    playerHealth = eachStat.Value;
-                    break;
+                 case "GameLevel":
+                     gameLevel = eachStat.Value;
+                     break;
 
-                case "PlayerDamage":
-                    playerDamage = eachStat.Value;
-                    break;
+                 case "PlayerHealth":
+                     playerHealth = eachStat.Value;
+                     break;
 
-                case "PlayerHighScore":
-                    playerHighScore = eachStat.Value;
-                    break;
+                 case "PlayerDamage":
+                     playerDamage = eachStat.Value;
+                     break;
 
-            }
-        }
-    }
-    #endregion PlayerStats
+                 case "PlayerHighScore":
+                     playerHighScore = eachStat.Value;
+                     break;
+
+             }
+         }
+     }
+     #endregion PlayerStats*/
 }
 
