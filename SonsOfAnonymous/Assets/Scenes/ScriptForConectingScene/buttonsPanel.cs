@@ -7,7 +7,7 @@ public class buttonsPanel: MonoBehaviour
     public GameObject PausePanel;
     public GameObject SettingsPanel;
 
-
+    
     public static bool GameIsPaused = false;
 
     // Start is called before the first frame update

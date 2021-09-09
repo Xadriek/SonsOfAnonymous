@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class CountdownTimer : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-
+    [SerializeField]
     private float timer = 10f;
 
     private Text timerSeconds;
