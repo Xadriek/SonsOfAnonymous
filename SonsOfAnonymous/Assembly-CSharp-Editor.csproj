@@ -65,6 +65,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MyAsset\Dark UI\Editor\InitDarkUI.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\FOVCollider2DEditor.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\FOVColliderEditor.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\RangeSensor2DEditor.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\RangeSensorEditor.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\RaySensor2DEditor.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\RaySensorEditor.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\SteeringRig2DEditor.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\SteeringRigEditor.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\TagSelectorPropertyDrawer.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\TriggerSensor2DEditor.cs" />
+    <Compile Include="Assets\SensorToolkit\Editor\TriggerSensorEditor.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
