@@ -3,10 +3,10 @@ using System.Collections;
 
 namespace SensorToolkit.Example
 {
-    [RequireComponent(typeof(GunWithClip), typeof(TeamMember))]
+    [RequireComponent(typeof(TeamMember))]
     public class GuardAI : MonoBehaviour
     {
-        public GameObject GunPivot;
+        
         public SteeringRig Steering;
         public Sensor Sight;
         public Transform[] PatrolPath;
@@ -15,13 +15,13 @@ namespace SensorToolkit.Example
         public float WanderDistance;
         public float SoundAlarmTime;
 
-        GunWithClip gun;
+        
         TeamMember team;
         bool ascending = true;
 
         void Start()
         {
-            gun = GetComponent<GunWithClip>();
+            
             team = GetComponent<TeamMember>();
             StartCoroutine(PatrolState());
         }
@@ -92,15 +92,12 @@ namespace SensorToolkit.Example
             if (!Sight.IsDetected(ToAttack))
             {
                 Steering.FaceTowardsTransform = null;
-                GunPivot.transform.localRotation = Quaternion.identity; // Return gun rotation back to resting position
                 StartCoroutine(Investigate(ToAttack.transform.position));
                 yield break;
             }
 
             // Roate the gun in hand to face the enemy, reload if empty, otherwise fire the gun.
-            GunPivot.transform.LookAt(new Vector3(ToAttack.transform.position.x, GunPivot.transform.position.y, ToAttack.transform.position.z));
-            if (gun.IsEmptyClip) gun.Reload();
-            else gun.Fire();
+            
 
             yield return null;
             goto Start;
