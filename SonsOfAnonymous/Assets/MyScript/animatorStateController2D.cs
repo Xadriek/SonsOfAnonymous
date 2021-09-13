@@ -9,10 +9,13 @@ public class animatorStateController2D : MonoBehaviour
     private Player playerInput;
     float velocityZ = 0.0f;
     float velocityX = 0.0f;
-
+    [SerializeField]
     public float acceleration = 2.0f;
+    [SerializeField]
     public float deceleration = 2.0f;
+    [SerializeField]
     public float maximunWalkVelocity = 0.5f;
+    [SerializeField]
     public float maximunRunVelocity = 2.0f;
 
     int VelocityZHash;
