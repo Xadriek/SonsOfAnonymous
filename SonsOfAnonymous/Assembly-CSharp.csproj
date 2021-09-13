@@ -118,6 +118,7 @@
     <Compile Include="Assets\Scenes\ScriptForConectingScene\buttonsPanel.cs" />
     <Compile Include="Assets\Scenes\ScriptForPlayFab\PlayFabController.cs" />
     <Compile Include="Assets\Scenes\ScriptForPlayFab\PlayFabManager.cs" />
+    <Compile Include="Assets\Scenes\ScriptForPlayFab\closePanel.cs" />
     <Compile Include="Assets\SensorToolkit\Examples\Action\resources\ScoreZone.cs" />
     <Compile Include="Assets\SensorToolkit\Examples\Action\resources\SoldierAI.cs" />
     <Compile Include="Assets\SensorToolkit\Examples\Space\resources\Asteroid.cs" />

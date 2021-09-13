@@ -5,6 +5,7 @@ using UnityEngine;
 public class PanelOpener : MonoBehaviour
 {
     public GameObject Panel;
+
     public static bool GameIsPaused = false;
 
     // Start is called before the first frame update
@@ -16,5 +17,8 @@ public class PanelOpener : MonoBehaviour
             Time.timeScale = 0f;
             GameIsPaused = true;
         }
+
+
     }
+    
 }
