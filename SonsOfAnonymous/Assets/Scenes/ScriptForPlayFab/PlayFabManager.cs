@@ -17,6 +17,11 @@ public class PlayFabManager : MonoBehaviour
 
     public void RegisterButton()
     {
+        if(passwordInput.text.Length < 6)
+        {
+            massageText.text = "Password too short!!!";
+            return;
+        }
         var request = new RegisterPlayFabUserRequest
         {
             Email = emailInput.text,
@@ -31,6 +36,37 @@ public class PlayFabManager : MonoBehaviour
         massageText.text = "Registered and logged in!!!";
     }
 
+
+    public void LoginButton()
+    {
+        var request = new LoginWithEmailAddressRequest
+        {
+            Email = emailInput.text,
+            Password = passwordInput.text
+
+        };
+        PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnError);
+    }
+    void OnLoginSuccess(LoginResult result)
+    {
+        massageText.text = "Logged in!";
+        Debug.Log("Successful login/account create!");
+
+    }
+
+    public void ResetPasswordButton()
+    {
+        var request = new SendAccountRecoveryEmailRequest
+        {
+            Email = emailInput.text,
+            TitleId = "D53CD"
+        };
+        PlayFabClientAPI.SendAccountRecoveryEmail(request, OnPasswordReset, OnError);
+    }
+    void OnPasswordReset(SendAccountRecoveryEmailResult result) 
+    {
+        massageText.text = "password reset mail sent!";
+    }
 
      void Start()
     {
@@ -54,7 +90,7 @@ public class PlayFabManager : MonoBehaviour
 
     void OnError(PlayFabError error)
     {
-        Debug.Log("Error while logging in/creating account!");
+        massageText.text = error.ErrorMessage;
         Debug.Log(error.GenerateErrorReport());
     }
 
