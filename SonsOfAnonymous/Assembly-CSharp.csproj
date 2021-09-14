@@ -103,8 +103,9 @@
     <Compile Include="Assets\MyScript\Player.cs" />
     <Compile Include="Assets\MyScript\PlayerController.cs" />
     <Compile Include="Assets\MyScript\animatorStateController2D.cs" />
-    <Compile Include="Assets\Scenes\GameOverScript\CountdownTimer.cs" />
-    <Compile Include="Assets\Scenes\GameOverScript\GameOverMenu.cs" />
+    <Compile Include="Assets\Scenes\GameOverFinishedScript\CountdownTimer.cs" />
+    <Compile Include="Assets\Scenes\GameOverFinishedScript\GameOverMenu.cs" />
+    <Compile Include="Assets\Scenes\GameOverFinishedScript\finish.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ButtonOpener.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitGametoMenu.cs" />
     <Compile Include="Assets\Scenes\ScriptForConectingScene\ExitSwitch.cs" />
