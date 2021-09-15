@@ -510,6 +510,67 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766293, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_Text
+      value: MISSION COMPLETE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766293, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4,
+        type: 3}
+    - target: {fileID: 5491409245067766293, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766293, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766294, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_EffectColor.b
+      value: 0.20235558
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766294, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_EffectColor.g
+      value: 0.7169812
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766294, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_EffectColor.r
+      value: 0.15895337
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766294, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_EffectDistance.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766294, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_EffectDistance.y
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766295, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1019.2451
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766295, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491409245067766295, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 136.67
+      objectReference: {fileID: 0}
     - target: {fileID: 5491409245177119260, guid: 3cd3d74e40da89442aa05c475a79aee1,
         type: 3}
       propertyPath: m_EffectColor.b
