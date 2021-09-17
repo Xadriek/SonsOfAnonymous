@@ -10,7 +10,7 @@ Material:
   m_Name: _Neon_01
   m_Shader: {fileID: 10, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -20,11 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Illum:
-        m_Texture: {fileID: 2800000, guid: 24ba356aaea94490d8db1c3b79fe6786, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7ea17fc58b75b4ec4a45afe5135449ce, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6e5d67a775952b5458524530411268c5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
