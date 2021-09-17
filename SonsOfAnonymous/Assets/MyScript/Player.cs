@@ -27,18 +27,18 @@ public class @Player : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Jump"",
-                    ""type"": ""Button"",
-                    ""id"": ""cb2d1c36-47fb-4ffe-829c-7cb5772c6fce"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
                     ""name"": ""look"",
                     ""type"": ""Value"",
                     ""id"": ""09bcf39d-5e34-4065-89b4-1e957ebde2b5"",
                     ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Interaction"",
+                    ""type"": ""Button"",
+                    ""id"": ""0aa30c0c-8b0a-452d-86e7-fcda4f819c90"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -57,28 +57,6 @@ public class @Player : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""8b932fe7-b242-4f26-b914-e2f0dbfa5c81"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e4ea88aa-5857-4cd9-9da5-c76975e931ad"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""eb77756d-4b70-403b-bfaa-52e93e133547"",
                     ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
@@ -87,17 +65,34 @@ public class @Player : IInputActionCollection, IDisposable
                     ""action"": ""look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0170601e-75d0-4e9e-955c-f9f5a12ac36e"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""Schema controllo"",
+            ""bindingGroup"": ""Schema controllo"",
+            ""devices"": []
+        }
+    ]
 }");
         // PlayerMain
         m_PlayerMain = asset.FindActionMap("PlayerMain", throwIfNotFound: true);
         m_PlayerMain_move = m_PlayerMain.FindAction("move", throwIfNotFound: true);
-        m_PlayerMain_Jump = m_PlayerMain.FindAction("Jump", throwIfNotFound: true);
         m_PlayerMain_look = m_PlayerMain.FindAction("look", throwIfNotFound: true);
+        m_PlayerMain_Interaction = m_PlayerMain.FindAction("Interaction", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -148,15 +143,15 @@ public class @Player : IInputActionCollection, IDisposable
     private readonly InputActionMap m_PlayerMain;
     private IPlayerMainActions m_PlayerMainActionsCallbackInterface;
     private readonly InputAction m_PlayerMain_move;
-    private readonly InputAction m_PlayerMain_Jump;
     private readonly InputAction m_PlayerMain_look;
+    private readonly InputAction m_PlayerMain_Interaction;
     public struct PlayerMainActions
     {
         private @Player m_Wrapper;
         public PlayerMainActions(@Player wrapper) { m_Wrapper = wrapper; }
         public InputAction @move => m_Wrapper.m_PlayerMain_move;
-        public InputAction @Jump => m_Wrapper.m_PlayerMain_Jump;
         public InputAction @look => m_Wrapper.m_PlayerMain_look;
+        public InputAction @Interaction => m_Wrapper.m_PlayerMain_Interaction;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMain; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -169,12 +164,12 @@ public class @Player : IInputActionCollection, IDisposable
                 @move.started -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnMove;
                 @move.performed -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnMove;
                 @move.canceled -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnMove;
-                @Jump.started -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnJump;
-                @Jump.performed -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnJump;
-                @Jump.canceled -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnJump;
                 @look.started -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnLook;
                 @look.performed -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnLook;
                 @look.canceled -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnLook;
+                @Interaction.started -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnInteraction;
+                @Interaction.performed -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnInteraction;
+                @Interaction.canceled -= m_Wrapper.m_PlayerMainActionsCallbackInterface.OnInteraction;
             }
             m_Wrapper.m_PlayerMainActionsCallbackInterface = instance;
             if (instance != null)
@@ -182,20 +177,29 @@ public class @Player : IInputActionCollection, IDisposable
                 @move.started += instance.OnMove;
                 @move.performed += instance.OnMove;
                 @move.canceled += instance.OnMove;
-                @Jump.started += instance.OnJump;
-                @Jump.performed += instance.OnJump;
-                @Jump.canceled += instance.OnJump;
                 @look.started += instance.OnLook;
                 @look.performed += instance.OnLook;
                 @look.canceled += instance.OnLook;
+                @Interaction.started += instance.OnInteraction;
+                @Interaction.performed += instance.OnInteraction;
+                @Interaction.canceled += instance.OnInteraction;
             }
         }
     }
     public PlayerMainActions @PlayerMain => new PlayerMainActions(this);
+    private int m_SchemacontrolloSchemeIndex = -1;
+    public InputControlScheme SchemacontrolloScheme
+    {
+        get
+        {
+            if (m_SchemacontrolloSchemeIndex == -1) m_SchemacontrolloSchemeIndex = asset.FindControlSchemeIndex("Schema controllo");
+            return asset.controlSchemes[m_SchemacontrolloSchemeIndex];
+        }
+    }
     public interface IPlayerMainActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnJump(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
+        void OnInteraction(InputAction.CallbackContext context);
     }
 }

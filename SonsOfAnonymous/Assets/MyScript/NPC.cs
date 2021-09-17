@@ -9,6 +9,9 @@ public class NPC : MonoBehaviour
 
     public Transform ChatBackGround;
     public Transform NPCCharacter;
+    public Transform Player;
+
+    private PlayerController playerController;
 
     private DialogueSystem dialogueSystem;
 
@@ -20,28 +23,37 @@ public class NPC : MonoBehaviour
     void Start()
     {
         dialogueSystem = FindObjectOfType<DialogueSystem>();
+        playerController = FindObjectOfType<PlayerController>();
     }
 
     void FixedUpdate()
     {
-        Vector3 Pos = Camera.main.WorldToScreenPoint(NPCCharacter.position);
-        Pos.y += 175;
+        Vector3 Pos = Camera.main.WorldToScreenPoint(Player.position);
+
+        Pos.y += 200;
+        Pos.z += 50;
         ChatBackGround.position = Pos;
     }
 
-    public void OnTriggerStay(Collider other)
+    public void OnTriggerStay(Collider Other)
     {
-        this.gameObject.GetComponent<NPC>().enabled = true;
-        FindObjectOfType<DialogueSystem>().EnterRangeOfNPC();
-        if ((other.gameObject.tag == "Player") && Input.GetKeyDown(KeyCode.F))
+        if (Other.gameObject.tag == "Player")
         {
+
             this.gameObject.GetComponent<NPC>().enabled = true;
-            dialogueSystem.Names = Name;
-            dialogueSystem.dialogueLines = sentences;
-            FindObjectOfType<DialogueSystem>().NPCName();
+
+            FindObjectOfType<DialogueSystem>().EnterRangeOfNPC();
+
+            if ((playerController.playerInput.PlayerMain.Interaction.triggered))
+            {
+                this.gameObject.GetComponent<NPC>().enabled = true;
+                dialogueSystem.Names = Name;
+                dialogueSystem.dialogueLines = sentences;
+                FindObjectOfType<DialogueSystem>().NPCName();
+            }
         }
     }
-
+    
     public void OnTriggerExit()
     {
         FindObjectOfType<DialogueSystem>().OutOfRange();

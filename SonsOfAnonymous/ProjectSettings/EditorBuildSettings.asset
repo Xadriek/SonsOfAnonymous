@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial_VDL.unity
     guid: c7d30e6018ccb6848a6250f0b148db89
   - enabled: 1
-    path: Assets/Scenes/Main Menu2 (Mobile).unity
+    path: Assets/Scenes/Menu Pausa(Mobile).unity
     guid: 4faa97079554896418a4ca14a2d4832a
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: e9dc9e6b26f8b4d4ea34586065ad6cb9
+  - enabled: 1
+    path: Assets/Scenes/finishScene.unity
+    guid: 6a21cf0971960034c9131609449017ea
   m_configObjects: {}

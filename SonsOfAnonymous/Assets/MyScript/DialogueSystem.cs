@@ -12,10 +12,12 @@ public class DialogueSystem : MonoBehaviour
     public GameObject dialogueGUI;
     public Transform dialogueBoxGUI;
 
-    public float letterDelay = 0.1f;
+    public float letterDelay = 0.3f;
     public float letterMultiplier = 0.5f;
 
-    public KeyCode DialogueInput = KeyCode.F;
+    //public KeyCode DialogueInput = playerController.playerInput.PlayerMain.Interaction.triggered;
+
+    private PlayerController playerController;
 
     public string Names;
 
@@ -33,6 +35,8 @@ public class DialogueSystem : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         dialogueText.text = "";
+        playerController = FindObjectOfType<PlayerController>();
+
     }
 
     void FixedUpdate()
@@ -50,12 +54,41 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
+    public void OutOfRange()
+    {
+        outOfRange = true;
+        if (outOfRange == true)
+        {
+            letterIsMultiplied = false;
+            dialogueActive = false;
+            StopAllCoroutines();
+            dialogueGUI.SetActive(false);
+            dialogueBoxGUI.gameObject.SetActive(false);
+        }
+    }
+
+    public void EventScriptName()
+    {
+        outOfRange = false;
+        dialogueBoxGUI.gameObject.SetActive(true);
+        nameText.text = Names;
+       
+            if (!dialogueActive)
+            {
+                dialogueActive = true;
+                StartCoroutine(StartDialogue());
+            }
+        
+        StartDialogue();
+    }
+
+
     public void NPCName()
     {
         outOfRange = false;
         dialogueBoxGUI.gameObject.SetActive(true);
         nameText.text = Names;
-        if (Input.GetKeyDown(KeyCode.F))
+        if (playerController.playerInput.PlayerMain.Interaction.triggered)
         {
             if (!dialogueActive)
             {
@@ -90,7 +123,7 @@ public class DialogueSystem : MonoBehaviour
 
             while (true)
             {
-                if (Input.GetKeyDown(DialogueInput) && dialogueEnded == false)
+                if ((playerController.playerInput.PlayerMain.Interaction.triggered) && dialogueEnded == false)
                 {
                     break;
                 }
@@ -118,19 +151,27 @@ public class DialogueSystem : MonoBehaviour
 
                 if (currentCharacterIndex < stringLength)
                 {
-                    if (Input.GetKey(DialogueInput))
+                    if (currentCharacterIndex % 20 != 0)
                     {
-                        yield return new WaitForSeconds(letterDelay * letterMultiplier);
+                        if ((playerController.playerInput.PlayerMain.Interaction.triggered))
+                        {
+                            yield return new WaitForSeconds(letterDelay * letterMultiplier);
 
-                        if (audioClip) audioSource.PlayOneShot(audioClip, 0.5F);
+                            if (audioClip) audioSource.PlayOneShot(audioClip, 0.5F);
+                        }
+                        else
+                        {
+                            yield return new WaitForSeconds(letterDelay);
+
+
+                            if (audioClip) audioSource.PlayOneShot(audioClip, 0.5F);
+                        }
                     }
                     else
                     {
-                        yield return new WaitForSeconds(letterDelay);
-
-                        if (audioClip) audioSource.PlayOneShot(audioClip, 0.5F);
+                        dialogueText.text += "\n";
                     }
-                }
+                } 
                 else
                 {
                     dialogueEnded = false;
@@ -139,7 +180,7 @@ public class DialogueSystem : MonoBehaviour
             }
             while (true)
             {
-                if (Input.GetKeyDown(DialogueInput))
+                if ((playerController.playerInput.PlayerMain.Interaction.triggered))
                 {
                     break;
                 }
@@ -157,16 +198,5 @@ public class DialogueSystem : MonoBehaviour
         dialogueBoxGUI.gameObject.SetActive(false);
     }
 
-    public void OutOfRange()
-    {
-        outOfRange = true;
-        if (outOfRange == true)
-        {
-            letterIsMultiplied = false;
-            dialogueActive = false;
-            StopAllCoroutines();
-            dialogueGUI.SetActive(false);
-            dialogueBoxGUI.gameObject.SetActive(false);
-        }
-    }
+    
 }

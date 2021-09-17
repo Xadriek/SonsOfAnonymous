@@ -2,8 +2,8 @@
     "m_SelectedDeviceId": "4100b3f5453d81a5",
     "m_SelectedPackage": {
         "deviceId": "4100b3f5453d81a5",
-        "name": "com.DefaultCompany.CovidCospiracy",
-        "processId": 14878,
+        "name": "com.DefaultCompany.SonsOfAnonymous",
+        "processId": 6435,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -54,6 +54,18 @@
             "deviceId": "4100b3f5453d81a5",
             "name": "com.DefaultCompany.CovidCospiracy",
             "processId": 14878,
+            "exited": false
+        },
+        {
+            "deviceId": "4100b3f5453d81a5",
+            "name": "com.DefaultCompany.SonsOfAnonymous",
+            "processId": 1893,
+            "exited": false
+        },
+        {
+            "deviceId": "4100b3f5453d81a5",
+            "name": "com.DefaultCompany.SonsOfAnonymous",
+            "processId": 6435,
             "exited": false
         }
     ],
