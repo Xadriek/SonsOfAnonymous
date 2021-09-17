@@ -30,12 +30,12 @@ public class EventScript : MonoBehaviour
     {
         Vector3 Pos = Camera.main.WorldToScreenPoint(Player.position);
 
-        Pos.y += 180;
+        Pos.y += 300;
         Pos.z += 50;
         ChatBackGround.position = Pos;
     }
 
-    public void OnTriggerStay(Collider other)
+    public void OnTriggerStay(Collider Other)
     {
         this.gameObject.GetComponent<EventScript>().enabled = true;
         FindObjectOfType<DialogueSystem>().EnterRangeOfNPC();

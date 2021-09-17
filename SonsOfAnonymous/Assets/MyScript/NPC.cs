@@ -30,24 +30,27 @@ public class NPC : MonoBehaviour
     {
         Vector3 Pos = Camera.main.WorldToScreenPoint(Player.position);
 
-        Pos.y += 180;
+        Pos.y += 200;
         Pos.z += 50;
         ChatBackGround.position = Pos;
     }
 
-    public void OnTriggerStay(Collider other)
+    public void OnTriggerStay(Collider Other)
     {
-        this.gameObject.GetComponent<NPC>().enabled = true;
-        if (Player) { 
-        FindObjectOfType<DialogueSystem>().EnterRangeOfNPC();
-        }
-        if ((playerController.playerInput.PlayerMain.Interaction.triggered))
-        {
+
+        
             this.gameObject.GetComponent<NPC>().enabled = true;
-            dialogueSystem.Names = Name;
-            dialogueSystem.dialogueLines = sentences;
-            FindObjectOfType<DialogueSystem>().NPCName();
-        }
+
+            FindObjectOfType<DialogueSystem>().EnterRangeOfNPC();
+
+            if ((playerController.playerInput.PlayerMain.Interaction.triggered))
+            {
+                this.gameObject.GetComponent<NPC>().enabled = true;
+                dialogueSystem.Names = Name;
+                dialogueSystem.dialogueLines = sentences;
+                FindObjectOfType<DialogueSystem>().NPCName();
+            }
+        
     }
     
     public void OnTriggerExit()
