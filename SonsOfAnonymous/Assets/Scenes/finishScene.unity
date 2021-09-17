@@ -645,6 +645,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5491409246258279205, guid: 3cd3d74e40da89442aa05c475a79aee1,
         type: 3}
+      propertyPath: Value
+      value: 
+      objectReference: {fileID: 5491409246341889016}
+    - target: {fileID: 5491409246258279205, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
+      propertyPath: Points
+      value: 
+      objectReference: {fileID: 5491409246341889017}
+    - target: {fileID: 5491409246258279205, guid: 3cd3d74e40da89442aa05c475a79aee1,
+        type: 3}
       propertyPath: ButtonsPanel
       value: 
       objectReference: {fileID: 1267419440}
@@ -725,3 +735,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cd3d74e40da89442aa05c475a79aee1, type: 3}
+--- !u!114 &5491409246341889016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8204324731009071748, guid: 3cd3d74e40da89442aa05c475a79aee1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5491409246341889015}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5491409246341889017 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9185725996804538968, guid: 3cd3d74e40da89442aa05c475a79aee1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5491409246341889015}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

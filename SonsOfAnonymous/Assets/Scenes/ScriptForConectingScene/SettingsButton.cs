@@ -8,10 +8,10 @@ public class SettingsButton : MonoBehaviour
 {
 
     public AudioMixer audioMixer;
-    public Dropdown resolutionDropdown;
+   /* public Dropdown resolutionDropdown;
     public Dropdown qualityDropdown;
     public Dropdown textureDropdown;
-    public Dropdown aaDropdown;
+    public Dropdown aaDropdown;*/
     public Slider volumeSlider;
      
     float currentVolume;
@@ -22,6 +22,8 @@ public class SettingsButton : MonoBehaviour
         audioMixer.SetFloat("MyExposedParam", volume);
         currentVolume = volume;
     }
+
+    /*
     public void SetFullscreen(bool isFullscreen)
     {
       //  Screen.fullScreen = isFullscreen;
@@ -131,9 +133,11 @@ public class SettingsButton : MonoBehaviour
             volumeSlider.value =
                         PlayerPrefs.GetFloat("VolumePreference");
     }
+    
+    */
     // Start is called before the first frame update
     void Start()
-    {
+    {/*
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
         resolutions = Screen.resolutions;
@@ -149,9 +153,9 @@ public class SettingsButton : MonoBehaviour
                 currentResolutionIndex = i;
         }
 
-        resolutionDropdown.AddOptions(options);
-        resolutionDropdown.RefreshShownValue();
-        LoadSettings(currentResolutionIndex);
+       resolutionDropdown.AddOptions(options);
+       resolutionDropdown.RefreshShownValue();
+        LoadSettings(currentResolutionIndex);*/
 
     }
 
