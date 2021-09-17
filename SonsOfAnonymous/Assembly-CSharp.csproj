@@ -87,6 +87,7 @@
      <Compile Include="Assets\MyAsset\Dark UI\Scripts\VirtualCursor.cs" />
      <Compile Include="Assets\MyAsset\Dark UI\Scripts\VirtualCursorAnimate.cs" />
      <Compile Include="Assets\MyAsset\_Creepy_Cat\_ShowRoom\_Scripts\AnimateTiledTexture.cs" />
+     <Compile Include="Assets\MyScript\AttackingScript.cs" />
      <Compile Include="Assets\MyScript\CameraLook.cs" />
      <Compile Include="Assets\MyScript\DialogueSystem.cs" />
      <Compile Include="Assets\MyScript\EventScript.cs" />
