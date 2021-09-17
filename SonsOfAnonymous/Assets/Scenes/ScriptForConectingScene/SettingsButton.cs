@@ -19,8 +19,9 @@ public class SettingsButton : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("MyExposedParam", volume);
-        currentVolume = volume;
+        volume = volumeSlider.value;
+        audioMixer.SetFloat("MasterVolume", volume);
+        //currentVolume = volume;
     }
 
     /*
