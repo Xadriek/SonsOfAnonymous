@@ -38,8 +38,9 @@ public class NPC : MonoBehaviour
     public void OnTriggerStay(Collider other)
     {
         this.gameObject.GetComponent<NPC>().enabled = true;
+        if (Player) { 
         FindObjectOfType<DialogueSystem>().EnterRangeOfNPC();
-        
+        }
         if ((playerController.playerInput.PlayerMain.Interaction.triggered))
         {
             this.gameObject.GetComponent<NPC>().enabled = true;
