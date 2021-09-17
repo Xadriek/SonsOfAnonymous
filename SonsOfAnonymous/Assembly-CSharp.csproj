@@ -105,6 +105,7 @@
     <Compile Include="Assets\MyScript\PlayerController.cs" />
     <Compile Include="Assets\MyScript\WinScript.cs" />
     <Compile Include="Assets\MyScript\animatorStateController2D.cs" />
+    <Compile Include="Assets\Points.cs" />
     <Compile Include="Assets\Scenes\GameOverFinishedScript\CountdownTimer.cs" />
     <Compile Include="Assets\Scenes\GameOverFinishedScript\GameOverMenu.cs" />
     <Compile Include="Assets\Scenes\GameOverFinishedScript\finish.cs" />
@@ -220,6 +221,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\_Barking_Dog\Common Scripts\MouseLook.cs" />
     <Compile Include="Assets\_Barking_Dog\Common Scripts\Turn_Move.cs" />
+    <Compile Include="Assets\scoring.cs" />
     <Compile Include="Assets\trigger.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
