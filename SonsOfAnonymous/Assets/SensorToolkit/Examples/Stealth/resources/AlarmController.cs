@@ -10,6 +10,9 @@ namespace SensorToolkit.Example
         public float FlashFrequency;
         public Transform[] LinearLevelWaypoints;
 
+        public GameObject DetectedSound;
+       
+
         bool alarmStarted = false;
         GameObject whoTrippedAlarm;
 
@@ -71,9 +74,11 @@ namespace SensorToolkit.Example
             alarmStarted = true;
             PointLight.color = AlarmColour;
             var startIntensity = PointLight.intensity;
-
+            DetectedSound.gameObject.SetActive(true);
+            
             while (true)
             {
+               
                 var intensity = (Mathf.Sin(FlashFrequency * Time.time * Mathf.PI * 2f) + 1f) / 2f * startIntensity;
                 PointLight.intensity = intensity;
                 yield return null;
