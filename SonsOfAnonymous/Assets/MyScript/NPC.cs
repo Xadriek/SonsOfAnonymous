@@ -37,8 +37,9 @@ public class NPC : MonoBehaviour
 
     public void OnTriggerStay(Collider Other)
     {
+        if (Other.gameObject.tag == "Player")
+        {
 
-        
             this.gameObject.GetComponent<NPC>().enabled = true;
 
             FindObjectOfType<DialogueSystem>().EnterRangeOfNPC();
@@ -50,7 +51,7 @@ public class NPC : MonoBehaviour
                 dialogueSystem.dialogueLines = sentences;
                 FindObjectOfType<DialogueSystem>().NPCName();
             }
-        
+        }
     }
     
     public void OnTriggerExit()
