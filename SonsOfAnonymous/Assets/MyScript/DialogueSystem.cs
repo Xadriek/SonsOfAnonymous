@@ -151,7 +151,7 @@ public class DialogueSystem : MonoBehaviour
 
                 if (currentCharacterIndex < stringLength)
                 {
-                    if (currentCharacterIndex % 20 != 0)
+                    if (currentCharacterIndex % 40 != 0)
                     {
                         if ((playerController.playerInput.PlayerMain.Interaction.triggered))
                         {
